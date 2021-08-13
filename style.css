@@ -1,0 +1,99 @@
+html {
+  font-family: "Inter", "Roboto", sans-serif;
+  color: #111;
+  background-color: #fefefe;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", "Roboto", sans-serif;
+  }
+}
+body {
+  margin: 1em;
+}
+header, main, footer {
+  max-width: 800px;
+  margin: auto;
+}
+footer {
+  padding-bottom: 1em;
+}
+h1, h2, h3 {
+  margin: 1.5em 0 .5em;
+}
+p {
+  margin: .75em 0;
+}
+a[href] {
+  color: #2767d9;
+  text-decoration: none;
+}
+a[href]:hover, a[href]:focus {
+  text-decoration: underline;
+}
+.table-wrapper {
+  width: fit-content;
+  margin: auto;
+  max-width: 100%;
+  overflow-x: auto;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 3px solid #d0d0d0;
+  border-radius: 5px;
+}
+table th {
+  padding: .5em .5em;
+  border-bottom: 3px solid #d0d0d0;
+  background-color: #f6f6f6;
+  font-weight: 600;
+}
+table td {
+  padding: .5em .5em;
+}
+table tr:not(:last-of-type) td {
+  border-bottom: 1px solid #efefef;
+}
+tr.alive {
+  background-color: #e3ffe3;
+}
+tr.no-content {
+  background-color: #fffde9;
+}
+em, b, strong {
+  font-weight: 600;
+}
+a[href^="#"] {
+  vertical-align: super;
+  font-size: 80%;
+}
+.td-last-center tr td:last-of-type {
+  text-align: center;
+}
+.timestamp {
+  text-align: right;
+  color: #aaa;
+  font-size: 85%;
+}
+.gallery {
+  text-align: center;
+}
+figure {
+  display: inline-block;
+  text-align: left;
+}
+figure img {
+  max-height: 40rem;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px 0 #ececec;
+  background-color: #f8f8f8;
+}
+figure figcaption {
+  margin-top: 1em;
+}

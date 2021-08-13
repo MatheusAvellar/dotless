@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Dotless Domains</title>
+  <meta name="author" content="Matheus Avellar">
+  <meta name="description" content="List of active and historical dotless domains!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://rsms.me" crossorigin>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>Dotless Domains</h1>
+  </header>
+  <main>
+    <p>
+      "Dotless domains" are domains that consist of a single label (e.g.
+      <a href="http://ai/">http://ai/</a>, as opposed to
+      http://<em>example</em>.ai/; or contact@<strong>pa</strong> as opposed to
+      contact@<em>example</em>.pa) due to there being A/AAAA or MX records in
+      the apex of a TLD zone.<a href="#ref1">[1]</a>
+    </p>
+    <p>
+      ICANN is notoriously against the practice,<a href="#ref1">[1]</a> and
+      prohibits it where it can – namely, on gTLDs.<a href="#ref3">[3]</a>
+      However, ccTLDs are under the country's jurisdiction, so it can do as it
+      pleases, and as such there are examples of active dotless ccTLD domains.
+    </p>
+    <p>
+      For email, the protocol itself would need to allow a dotless domain as a
+      destination address. According to ICANN's SSAC,<a href="#ref1">[1]</a>
+      SMTP requires at least two labels (i.e. "domain.tld") to deliver an email,
+      so it is unlikely Panama would receive an email sent to
+      <strong>contact@pa</strong>, for example. For completeness' sake, however,
+      apex MX servers are listed below as well.
+    </p>
+    <h2 id="aaaaa">A or AAAA</h2>
+    <h3>Current</h3>
+    <section class="table-wrapper">
+      <table>
+        <thead>
+          <th>Territory</th>
+          <th>ccTLD</th>
+          <th>URL</th>
+          <th>IP<br>(A/AAAA)</th>
+          <th>Email server<br>(MX)</th>
+          <th>Status</th>
+        </thead>
+        <tbody>
+          <tr class="alive">
+            <td>Anguilla (UK)</td>
+            <td>.ai</td>
+            <td><a href="http://ai./">http://ai/</a></td>
+            <td><a href="http://209.59.119.34/">209.59.119.34</a></td>
+            <td>mail.offshore.ai</td>
+            <td>Alive on HTTP; 400 on HTTPS</td>
+          </tr>
+          <tr class="no-content">
+            <td>Bahrain</td>
+            <td>.bh</td>
+            <td><a href="http://bh./">http://bh/</a></td>
+            <td><a href="http://88.201.27.211/">88.201.27.211</a><br>
+              <a href="http://10.10.10.10/">10.10.10.10</a></td>
+            <td>No</td>
+            <td>400 on HTTP; timeout on HTTPS</td>
+          </tr>
+          <tr class="no-content">
+            <td>Cameroon</td>
+            <td>.cm</td>
+            <td><a href="http://cm./">http://cm/</a></td>
+            <td><a href="http://195.24.205.60/">195.24.205.60</a></td>
+            <td>No</td>
+            <td>Timeout on HTTP/S; SSH open and responsive</td>
+          </tr>
+          <tr class="no-content">
+            <td>Pitcairn Islands (UK)</td>
+            <td>.pn</td>
+            <td><a href="http://pn./">http://pn/</a></td>
+            <td><a href="http://139.162.17.173/">139.162.17.173</a></td>
+            <td>No</td>
+            <td>Configuration page on HTTP; 400 on HTTPS</td>
+          </tr>
+          <tr class="no-content">
+            <td>Tokelau (NZ)</td>
+            <td>.tk</td>
+            <td><a href="http://tk./">http://tk/</a></td>
+            <td><a href="http://217.119.57.22/">217.119.57.22</a></td>
+            <td>No</td>
+            <td>Open, but empty response on HTTPS</td>
+          </tr>
+          <tr class="alive">
+            <td>Uzbekistan</td>
+            <td>.uz</td>
+            <td><a href="https://uz./">https://uz/</a></td>
+            <td><a href="https://91.212.89.8/">91.212.89.8</a></td>
+            <td>No</td>
+            <td>Alive on HTTPS only; mirror of <a href="https://cctld.uz/">cctld.uz</a></td>
+          </tr>
+          <tr>
+            <td>Vatican</td>
+            <td>.va</td>
+            <td><a href="http://va./">http://va/</a></td>
+            <td><a href="http://[2a01:b8:0:1:212:77:0:2]/">[2a01:b8:0:1:212:77:0:2]</a><br>
+              <a href="[2a01:b8:0:1:212:77:0:110]">[2a01:b8:0:1:212:77:0:110]</a></td>
+            <td>No</td>
+            <td>No known open ports (aside from DNS)</td>
+          </tr>
+          <tr>
+            <td>Samoa</td>
+            <td>.ws</td>
+            <td><a href="http://ws./">http://ws/</a></td>
+            <td><a href="http://64.70.19.33/">64.70.19.33</a></td>
+            <td>mail.worldsite.ws</td>
+            <td>Timeout</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <p class="timestamp">Last updated: 13 August 2021.</p>
+    <section class="gallery">
+      <figure>
+        <img src="./screenshots/2021-08-13_ai.png">
+        <figcaption>
+          <b>http://ai/</b> as of 13 August 2021.
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./screenshots/2021-08-13_bh.png">
+        <figcaption>
+          <b>http://bh/</b> as of 13 August 2021.
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./screenshots/2021-08-13_cm.png">
+        <figcaption>
+          <b>cm:22</b> as of 13 August 2021.
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./screenshots/2021-08-13_pn.png">
+        <figcaption>
+          <b>http://pn/</b> as of 13 August 2021.
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./screenshots/2021-08-13_tk.png">
+        <figcaption>
+          <b>tk:443</b> as of 13 August 2021.
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./screenshots/2021-08-13_uz.png">
+        <figcaption>
+          <b>https://uz/</b> as of 13 August 2021.
+        </figcaption>
+      </figure>
+    </section>
+    <h3>Historical</h3>
+    <section class="table-wrapper">
+      <table>
+        <thead>
+          <th>Territory</th>
+          <th>ccTLD</th>
+          <th>URL</th>
+          <th>IP<br>(A/AAAA)</th>
+          <th>Email server<br>(MX)</th>
+          <th>Last known working year</th>
+        </thead>
+        <tbody class="td-last-center">
+          <tr>
+            <td>Ascension (UK)</td>
+            <td>.ac</td>
+            <td>http://ac/</td>
+            <td><a href="http://193.223.78.210/">193.223.78.210</a></td>
+            <td>No</td>
+            <td>2013<a href="#ref4">[4]</a></td>
+          </tr>
+          <tr>
+            <td>Denmark</td>
+            <td>.dk</td>
+            <td>http://dk/</td>
+            <td><a href="http://193.163.102.24/">193.163.102.24</a><br>
+              <a href="http://[2a01:630:0:40:b1a:b1a:2011:1]">[2a01:630:0:40:b1a:b1a:2011:1]</a></td>
+            <td>No</td>
+            <td>2013<a href="#ref4">[4]</a></td>
+          </tr>
+          <tr>
+            <td>Guernsey (UK)</td>
+            <td>.gg</td>
+            <td>http://gg/</td>
+            <td><a href="http://87.117.196.80/">87.117.196.80</a></td>
+            <td>No</td>
+            <td>2013<a href="#ref4">[4]</a></td>
+          </tr>
+          <tr>
+            <td>British Indian Ocean Territory (UK)</td>
+            <td>.io</td>
+            <td>http://io/</td>
+            <td><a href="http://193.223.78.212/">193.223.78.212</a></td>
+            <td>mailer2.io</td>
+            <td>2013<a href="#ref4">[4]</a></td>
+          </tr>
+          <tr>
+            <td>Jersey (UK)</td>
+            <td>.je</td>
+            <td>http://je/</td>
+            <td><a href="http://87.117.196.80/">87.117.196.80</a></td>
+            <td>No</td>
+            <td>2013<a href="#ref4">[4]</a></td>
+          </tr>
+          <tr>
+            <td>Cambodia</td>
+            <td>.kh</td>
+            <td>http://kh/</td>
+            <td><a href="http://203.223.32.21/">203.223.32.21</a></td>
+            <td>ns1.dns.net.kh</td>
+            <td>2013<a href="#ref4">[4]</a></td>
+          </tr>
+          <tr>
+            <td>Saint Helena (UK)</td>
+            <td>.sh</td>
+            <td>http://sh/</td>
+            <td><a href="http://193.223.78.211/">193.223.78.211</a></td>
+            <td>No</td>
+            <td>2013<a href="#ref4">[4]</a></td>
+          </tr>
+          <tr>
+            <td>Turkmenistan</td>
+            <td>.tm</td>
+            <td>http://tm/</td>
+            <td><a href="http://193.223.78.213/">193.223.78.213</a></td>
+            <td>No</td>
+            <td>2013<a href="#ref4">[4]</a></td>
+          </tr>
+          <tr>
+            <td>Tonga</td>
+            <td>.to</td>
+            <td>http://to/</td>
+            <td><a href="http://216.74.32.107/">216.74.32.107</a></td>
+            <td>No</td>
+            <td>2013<a href="#ref4">[4]</a></td>
+          </tr>
+          <tr>
+            <td>Virgin Islands (US)</td>
+            <td>.vi</td>
+            <td>http://vi/</td>
+            <td><a href="http://193.0.0.198/">193.0.0.198</a></td>
+            <td>No</td>
+            <td>2013<a href="#ref4">[4]</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <h2 id="mx">MX only</h2>
+    <section class="table-wrapper">
+      <table>
+        <thead>
+          <th>Territory</th>
+          <th>ccTLD</th>
+          <th>Email server<br>(MX)</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Central African Republic</td>
+            <td>.cf</td>
+            <td>mail.intnet.cf</td>
+          </tr>
+          <tr>
+            <td>Guadeloupe (FR)</td>
+            <td>.gp</td>
+            <td>ns1.nic.gp</td>
+          </tr>
+          <tr>
+            <td>Guatemala</td>
+            <td>.gt</td>
+            <td>alt1.aspmx.l.google.com<br>
+              aspmx.l.google.com<br>
+              aspmx5.googlemail.com<br>
+              aspmx4.googlemail.com<br>
+              alt2.aspmx.l.google.com<br>
+              aspmx2.googlemail.com</td>
+          </tr>
+          <tr>
+            <td>Croatia</td>
+            <td>.hr</td>
+            <td>alpha.carnet.hr</td>
+          </tr>
+          <tr>
+            <td>Cambodia</td>
+            <td>.kh</td>
+            <td>ns1.dns.net.kh</td>
+          </tr>
+          <tr>
+            <td>Comoros</td>
+            <td>.km</td>
+            <td>mail1.comorestelecom.km</td>
+          </tr>
+          <tr>
+            <td>Sri Lanka</td>
+            <td>.lk</td>
+            <td>malithi-slt.nic.lk<br>
+              malithi-lc.nic.lk</td>
+          </tr>
+          <tr>
+            <td>Martinique (FR)</td>
+            <td>.mq</td>
+            <td>mx1-mq.mediaserv.net</td>
+          </tr>
+          <tr>
+            <td>Mauritania</td>
+            <td>.mr</td>
+            <td>mail.nic.mr</td>
+          </tr>
+          <tr>
+            <td>Panama</td>
+            <td>.pa</td>
+            <td>ns.pa</td>
+          </tr>
+          <tr>
+            <td>Philippines</td>
+            <td>.ph</td>
+            <td>mx1.sendnow.ph<br>
+              mx2.sendnow.ph<br>
+              mx3.sendnow.ph<br>
+              mx4.sendnow.ph<br>
+              mx5.sendnow.ph</td>
+          </tr>
+          <tr>
+            <td>Suriname</td>
+            <td>.sr</td>
+            <td>spsbbank.sr</td>
+          </tr>
+          <tr>
+            <td>Trinidad and Tobago</td>
+            <td>.tt</td>
+            <td>alt1.aspmx.l.google.com<br>
+              aspmx.l.google.com</td>
+          </tr>
+          <tr>
+            <td>Ukraine</td>
+            <td>.ua</td>
+            <td>mr.kolo.net</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <p class="timestamp">Last updated: 13 August 2021.</p>
+  </main>
+  <footer>
+    <h2>References</h2>
+    <ol>
+      <li id="ref1">
+        <p>
+          <a href="https://www.icann.org/resources/pages/sac053-dotless-domains-2012-08-24-en">SSAC
+          Report on Dotless Domains</a> (2012). Internet Corporation for
+          Assigned Names and Numbers. <b>Relevant quote:</b> <q>As a result, the
+          SSAC recommended that the use of DNS resource records such as A, AAAA,
+          and MX in the apex of a Top-Level Domain (TLD) should be contractually
+          prohibited where appropriate, and strongly discouraged in all
+          cases.</q>
+        </p>
+      </li>
+      <li id="ref2">
+        <p>
+          <a href="https://www.iab.org/documents/correspondence-reports-documents/2013-2/iab-statement-dotless-domains-considered-harmful/">IAB
+          Statement: Dotless Domains Considered Harmful</a> (2013). Internet
+          Architecture Board. <b>Relevant quote:</b> <q>1. The IAB strongly
+          recommends against considering, implementing, or deploying dotless
+          domains; 2. The IAB believes that dotless domains are inherently
+          harmful to Internet security.</q>
+        </p>
+      </li>
+      <li id="ref3">
+        <p>
+          <a href="https://www.icann.org/resources/board-material/resolutions-new-gtld-2013-08-13-en">Approved
+          Resolutions | Meeting of the New gTLD Program Committee</a> (2013).
+          New gTLD Program Committee. <b>Relevant quote:</b> <q>[…]the NGPC
+          affirms that the use of dotless domains is prohibited.</q>
+        </p>
+      </li>
+      <li id="ref4">
+        <p>
+          Levine, John; Hoffman, Paul (2013). <a href="https://datatracker.ietf.org/doc/html/rfc7085">Top-Level
+          Domains That Are Already Dotless</a>. Internet Engineering Task Force.
+        </p>
+      </li>
+    </ol>
+  </footer>
+  <link rel="preload" as="style" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://rsms.me/inter/inter.css">
+</body>
+</html>
