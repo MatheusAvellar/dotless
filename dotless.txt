@@ -1,0 +1,41 @@
+
+A records ---------------------
+AI has address 209.59.119.34
+BH has address 10.10.10.10
+BH has address 88.201.27.211
+CM has address 195.24.205.60
+PN has address 139.162.17.173
+TK has address 217.119.57.22
+uz has address 91.212.89.8
+ws has address 64.70.19.33
+AAAA records ------------------
+va has IPv6 address 2a01:b8:0:1:212:77:0:110
+va has IPv6 address 2a01:b8:0:1:212:77:0:2
+MX records --------------------
+AI mail is handled by 10 mail.offshore.AI.
+CF mail is handled by 0 mail.intnet.CF.
+GP mail is handled by 10 ns1.nic.GP.
+gt mail is handled by 10 aspmx.l.google.com.
+gt mail is handled by 20 alt1.aspmx.l.google.com.
+gt mail is handled by 20 alt2.aspmx.l.google.com.
+gt mail is handled by 30 aspmx2.googlemail.com.
+gt mail is handled by 30 aspmx4.googlemail.com.
+gt mail is handled by 30 aspmx5.googlemail.com.
+hr mail is handled by 5 alpha.carnet.hr.
+KH mail is handled by 10 ns1.dns.net.KH.
+KM mail is handled by 100 mail1.comorestelecom.KM.
+lk mail is handled by 10 malithi-slt.nic.lk.
+lk mail is handled by 20 malithi-lc.nic.lk.
+mq mail is handled by 10 mx1-mq.mediaserv.net.
+mr mail is handled by 5 mail.nic.mr.
+pa mail is handled by 5 ns.pa.
+PH mail is handled by 10 mx1.sendnow.ph.
+PH mail is handled by 20 mx2.sendnow.ph.
+PH mail is handled by 30 mx3.sendnow.ph.
+PH mail is handled by 40 mx4.sendnow.ph.
+PH mail is handled by 50 mx5.sendnow.ph.
+SR mail is handled by 10 spsbbank.SR.
+TT mail is handled by 1 aspmx.l.google.com.
+TT mail is handled by 10 alt1.aspmx.l.google.com.
+UA mail is handled by 10 mr.kolo.net.
+ws mail is handled by 10 mail.worldsite.ws.

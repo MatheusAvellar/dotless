@@ -117,7 +117,7 @@
         </tbody>
       </table>
     </section>
-    <p class="timestamp">Last updated: 13 August 2021.</p>
+    <p class="timestamp">Last updated: 14 August 2021.</p>
     <h3>Screenshots</h3>
     <section class="gallery">
       <figure>
@@ -157,7 +157,55 @@
         </figcaption>
       </figure>
     </section>
+    <h3>New TLDs</h3>
+    <p>
+      In order to prevent local aliases from colliding with newly registered
+      TLDs (think programmers using <b>foo.bar</b> as a test domain before the
+      gTLD <b>.bar</b>), ICANN published a resolution in 2014 requiring new TLDs
+      to include a few apex DNS records on their TLDs for at least 90
+      days.<a href="#ref4">[4]</a>
+    </p>
+    <p>
+      As such, as of August 2021, the following TLDs also contain apex records,
+      but they're merely informational and don't point to real servers:
+    </p>
+    <section class="table-wrapper">
+      <table>
+        <thead>
+          <th>TLD</th>
+          <th>IP<br>(A/AAAA)</th>
+          <th>Email server<br>(MX)</th>
+          <th>Text record<br>(TXT)</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.arab</td>
+            <td rowspan="4"><a href="http://127.0.53.53/">127.0.53.53</a></td>
+            <td>your-dns-needs-immediate-attention.arab</td>
+            <td rowspan="4">"Your DNS configuration needs immediate attention see
+              <a href="https://icann.org/namecollision">https://icann.org/namecollision</a>"</td>
+          </tr>
+          <tr>
+            <td>.cpa</td>
+            <td>your-dns-needs-immediate-attention.cpa</td>
+          </tr>
+          <tr>
+            <td>.politie</td>
+            <td>your-dns-needs-immediate-attention.politie</td>
+          </tr>
+          <tr>
+            <td>.watches</td>
+            <td>your-dns-needs-immediate-attention.watches</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <p class="timestamp">Last updated: 14 August 2021.</p>
     <h3>Historical</h3>
+    <p>
+      These are TLDs that previously had apex records, but no longer do so. The
+      bulk of it comes from a list by the IETF from 2013:<a href="#ref5">[5]</a>
+    </p>
     <section class="table-wrapper">
       <table>
         <thead>
@@ -175,7 +223,7 @@
             <td>http://ac/</td>
             <td><a href="http://193.223.78.210/">193.223.78.210</a></td>
             <td>No</td>
-            <td>2013<a href="#ref4">[4]</a></td>
+            <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr>
             <td>Denmark</td>
@@ -184,7 +232,7 @@
             <td><a href="http://193.163.102.24/">193.163.102.24</a><br>
               <a href="http://[2a01:630:0:40:b1a:b1a:2011:1]">[2a01:630:0:40:b1a:b1a:2011:1]</a></td>
             <td>No</td>
-            <td>2013<a href="#ref4">[4]</a></td>
+            <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr>
             <td>Guernsey (UK)</td>
@@ -192,7 +240,7 @@
             <td>http://gg/</td>
             <td><a href="http://87.117.196.80/">87.117.196.80</a></td>
             <td>No</td>
-            <td>2013<a href="#ref4">[4]</a></td>
+            <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr>
             <td>British Indian Ocean Territory (UK)</td>
@@ -200,7 +248,7 @@
             <td>http://io/</td>
             <td><a href="http://193.223.78.212/">193.223.78.212</a></td>
             <td>mailer2.io</td>
-            <td>2013<a href="#ref4">[4]</a></td>
+            <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr>
             <td>Jersey (UK)</td>
@@ -208,7 +256,7 @@
             <td>http://je/</td>
             <td><a href="http://87.117.196.80/">87.117.196.80</a></td>
             <td>No</td>
-            <td>2013<a href="#ref4">[4]</a></td>
+            <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr>
             <td>Cambodia</td>
@@ -216,7 +264,7 @@
             <td>http://kh/</td>
             <td><a href="http://203.223.32.21/">203.223.32.21</a></td>
             <td>ns1.dns.net.kh</td>
-            <td>2013<a href="#ref4">[4]</a></td>
+            <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr>
             <td>Saint Helena (UK)</td>
@@ -224,7 +272,7 @@
             <td>http://sh/</td>
             <td><a href="http://193.223.78.211/">193.223.78.211</a></td>
             <td>No</td>
-            <td>2013<a href="#ref4">[4]</a></td>
+            <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr>
             <td>Turkmenistan</td>
@@ -232,7 +280,7 @@
             <td>http://tm/</td>
             <td><a href="http://193.223.78.213/">193.223.78.213</a></td>
             <td>No</td>
-            <td>2013<a href="#ref4">[4]</a></td>
+            <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr>
             <td>Tonga</td>
@@ -240,7 +288,7 @@
             <td>http://to/</td>
             <td><a href="http://216.74.32.107/">216.74.32.107</a></td>
             <td>No</td>
-            <td>2013<a href="#ref4">[4]</a></td>
+            <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr>
             <td>Virgin Islands (US)</td>
@@ -248,7 +296,7 @@
             <td>http://vi/</td>
             <td><a href="http://193.0.0.198/">193.0.0.198</a></td>
             <td>No</td>
-            <td>2013<a href="#ref4">[4]</a></td>
+            <td>2013<a href="#ref5">[5]</a></td>
           </tr>
         </tbody>
       </table>
@@ -276,12 +324,13 @@
           <tr>
             <td>Guatemala</td>
             <td>.gt</td>
-            <td>alt1.aspmx.l.google.com<br>
-              aspmx.l.google.com<br>
+            <td>aspmx2.googlemail.com<br>
               aspmx5.googlemail.com<br>
               aspmx4.googlemail.com<br>
+              aspmx.l.google.com<br>
+              alt1.aspmx.l.google.com<br>
               alt2.aspmx.l.google.com<br>
-              aspmx2.googlemail.com</td>
+              </td>
           </tr>
           <tr>
             <td>Croatia</td>
@@ -336,8 +385,8 @@
           <tr>
             <td>Trinidad and Tobago</td>
             <td>.tt</td>
-            <td>alt1.aspmx.l.google.com<br>
-              aspmx.l.google.com</td>
+            <td>aspmx.l.google.com<br>
+              alt1.aspmx.l.google.com</td>
           </tr>
           <tr>
             <td>Ukraine</td>
@@ -347,7 +396,50 @@
         </tbody>
       </table>
     </section>
-    <p class="timestamp">Last updated: 13 August 2021.</p>
+    <p class="timestamp">Last updated: 14 August 2021.</p>
+    <h3>Historical</h3>
+    <p>
+      Similarly to the historical A/AAAA records, these are TLDs that previously
+      had apex MX records, but no longer do so:<a href="#ref5">[5]</a>
+    </p>
+    <section class="table-wrapper">
+      <table>
+        <thead>
+          <th>Territory</th>
+          <th>ccTLD</th>
+          <th>Email server<br>(MX)</th>
+          <th>Last known working year</th>
+        </thead>
+        <tbody class="td-last-center">
+          <tr>
+            <td>Åland Islands (FI)</td>
+            <td>.ax</td>
+            <td>mail.aland.net</td>
+            <td>2013<a href="#ref5">[5]</a></td>
+          </tr>
+          <tr>
+            <td>Dominica</td>
+            <td>.dm</td>
+            <td>mail.nic.dm</td>
+            <td>2013<a href="#ref5">[5]</a></td>
+          </tr>
+          <tr>
+            <td>Vatican</td>
+            <td>.va</td>
+            <td>raphaelmx1.posta.va<br>
+              raphaelmx2.posta.va<br>
+              raphaelmx3.posta.va</td>
+            <td>2013<a href="#ref5">[5]</a></td>
+          </tr>
+          <tr>
+            <td>Yemen</td>
+            <td>.ye</td>
+            <td>mail.yemen.net.ye</td>
+            <td>2013<a href="#ref5">[5]</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </main>
   <footer>
     <h2>References</h2>
@@ -382,6 +474,13 @@
         </p>
       </li>
       <li id="ref4">
+        <p>
+          Atallah, Akram (2014). <a href="https://newgtlds.icann.org/sites/default/files/agreements/name-collision-assessment-04aug14-en.htm">Name
+          Collision Occurrence Assessment</a>. Internet Corporation for Assigned
+          Names and Numbers.
+        </p>
+      </li>
+      <li id="ref5">
         <p>
           Levine, John; Hoffman, Paul (2013). <a href="https://datatracker.ietf.org/doc/html/rfc7085">Top-Level
           Domains That Are Already Dotless</a>. Internet Engineering Task Force.
