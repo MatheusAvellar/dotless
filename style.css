@@ -78,10 +78,14 @@ a[href^="#"] {
 }
 .gallery {
   text-align: center;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 figure {
   display: inline-block;
   text-align: left;
+  vertical-align: middle;
 }
 figure img {
   max-height: 40rem;
