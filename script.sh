@@ -6,7 +6,8 @@
 # record; instead we filter from a simple `host XX.` query.
 # This may fail if a local address that collides with a TLD exists. For example,
 # for a computer named "kiwi", the command `host kiwi.` will return the local IP
-# However, the speed gain from not checking nameservers individually is 
+# There may be additional unknown and unintended consequences. However, the
+# speed gain is significant enough to justify the changes.
 
 mkdir _tmp
 cd _tmp
