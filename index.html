@@ -40,10 +40,19 @@
       <li>
         <a href="#aaaaa">A or AAAA</a>
         <ol>
-          <li><a href="#aaaaa-current">Current</a></li>
-          <li><a href="#aaaaa-screenshots">Screenshots</a></li>
+          <li>
+            <a href="#aaaaa-current">Current</a>
+            <ol>
+              <li><a href="#aaaaa-screenshots">Screenshots</a></li>
+            </ol>
+          </li>
           <li><a href="#aaaaa-new">New TLDs</a></li>
-          <li><a href="#aaaaa-historical">Historical</a></li>
+          <li>
+            <a href="#aaaaa-historical">Historical</a>
+            <ol>
+              <li><a href="#aaaaa-hist-shots">Screenshots</a></li>
+            </ol>
+          </li>
         </ol>
       </li>
       <li>
@@ -83,19 +92,15 @@
             <td><a href="http://ai./">http://ai/</a></td>
             <td><a href="http://209.59.119.34/">209.59.119.34</a></td>
             <td>mail.offshore.ai</td>
-            <td>Alive on HTTP (<a href="http://offshore.ai/">offshore.ai</a> mirror);
-              400 on HTTPS</td>
+            <td>
+              <dl>
+                <dt>HTTP</dt>
+                <dd>Alive (<a href="http://offshore.ai/">offshore.ai</a> mirror)</dd>
+                <dt>HTTPS</dt>
+                <dd>Connection refused</dd>
+              </dl>
+            </td>
             <td>2013<a href="#ref5">[5]</a></td>
-          </tr>
-          <tr class="no-content">
-            <td>Bahrain</td>
-            <td>.bh</td>
-            <td><a href="http://bh./">http://bh/</a></td>
-            <td><a href="http://88.201.27.211/">88.201.27.211</a><br>
-              <a href="http://10.10.10.10/">10.10.10.10</a></td>
-            <td>No</td>
-            <td>400 on HTTP; timeout on HTTPS</td>
-            <td>August 2021</td>
           </tr>
           <tr class="no-content">
             <td>Cameroon</td>
@@ -103,7 +108,14 @@
             <td><a href="http://cm./">http://cm/</a></td>
             <td><a href="http://195.24.205.60/">195.24.205.60</a></td>
             <td>No</td>
-            <td>Timeout on HTTP/S; SSH open and responsive</td>
+            <td>
+              <dl>
+                <dt>HTTP/S</dt>
+                <dd>Timeout</dd>
+                <dt>Other</dt>
+                <dd>SSH open</dd>
+              </dl>
+            </td>
             <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr class="no-content">
@@ -112,9 +124,15 @@
             <td><a href="http://pn./">http://pn/</a></td>
             <td><a href="http://139.162.17.173/">139.162.17.173</a></td>
             <td>No</td>
-            <td>Configuration page on HTTP (mirror of <a href="http://pitcairn.net.pn/">pitcairn.net.pn</a>);
-              400 on HTTPS</td>
-            <td>August 2021</td>
+            <td>
+              <dl>
+                <dt>HTTP</dt>
+                <dd>Configuration page (<a href="http://pitcairn.net.pn/">pitcairn.net.pn</a> mirror)</dd>
+                <dt>HTTPS</dt>
+                <dd>400 Bad Request</dd>
+              </dl>
+            </td>
+            <td>Aug. 2021</td>
           </tr>
           <tr class="no-content">
             <td>Tokelau (NZ)</td>
@@ -122,7 +140,14 @@
             <td><a href="http://tk./">http://tk/</a></td>
             <td><a href="http://217.119.57.22/">217.119.57.22</a></td>
             <td>No</td>
-            <td>Open, but empty response on HTTPS</td>
+            <td>
+              <dl>
+                <dt>HTTP</dt>
+                <dd>Timeout</dd>
+                <dt>HTTPS</dt>
+                <dd>Connection closed</dd>
+              </dl>
+            </td>
             <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr class="alive">
@@ -131,7 +156,14 @@
             <td><a href="https://uz./">https://uz/</a></td>
             <td><a href="https://91.212.89.8/">91.212.89.8</a></td>
             <td>No</td>
-            <td>Alive on HTTPS only (mirror of <a href="https://cctld.uz/">cctld.uz</a>)</td>
+            <td>
+              <dl>
+                <dt>HTTP</dt>
+                <dd>500 Internal Server Error</dd>
+                <dt>HTTPS</dt>
+                <dd>Alive (<a href="https://cctld.uz/">cctld.uz</a> mirror)</dd>
+              </dl>
+            </td>
             <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr>
@@ -141,8 +173,13 @@
             <td><a href="http://[2a01:b8:0:1:212:77:0:2]/">[2a01:b8:0:1:212:77:0:2]</a><br>
               <a href="http://[2a01:b8:0:1:212:77:0:110]/">[2a01:b8:0:1:212:77:0:110]</a></td>
             <td>No</td>
-            <td>No known open ports (aside from DNS)</td>
-            <td>August 2021</td>
+            <td>
+              <dl>
+                <dt>Other</dt>
+                <dd>No known open ports, aside from DNS</dd>
+              </dl>
+            </td>
+            <td>Aug. 2021</td>
           </tr>
           <tr>
             <td>Samoa</td>
@@ -150,52 +187,53 @@
             <td><a href="http://ws./">http://ws/</a></td>
             <td><a href="http://64.70.19.33/">64.70.19.33</a></td>
             <td>mail.worldsite.ws</td>
-            <td>Timeout</td>
+            <td>
+              <dl>
+                <dt>HTTP/S</dt>
+                <dd>Timeout</dd>
+                <dt>Other</dt>
+                <dd>SSH timeout</dd>
+              </dl>
+            </td>
             <td>2013<a href="#ref5">[5]</a></td>
           </tr>
         </tbody>
       </table>
     </section>
-    <p class="timestamp">Last checked: 3 January 2022.</p>
-    <h3>
+    <p class="timestamp">Last checked: 3 Aug. 2022.</p>
+    <h4>
       <a id="aaaaa-screenshots" href="#aaaaa-screenshots">#</a>
       Screenshots
-    </h3>
+    </h4>
     <section class="gallery">
       <figure>
         <img src="./screenshots/2021-08-13_ai.png">
         <figcaption>
-          <b>http://ai/</b> as of 13 August 2021.
-        </figcaption>
-      </figure>
-      <figure>
-        <img src="./screenshots/2021-08-13_bh.png">
-        <figcaption>
-          <b>http://bh/</b> as of 13 August 2021.
+          <b>http://ai/</b> as of 13 Aug. 2021.
         </figcaption>
       </figure>
       <figure>
         <img src="./screenshots/2021-08-13_cm.png">
         <figcaption>
-          <b>cm:22</b> as of 13 August 2021.
+          <b>cm:22</b> as of 13 Aug. 2021.
         </figcaption>
       </figure>
       <figure>
         <img src="./screenshots/2021-08-13_pn.png">
         <figcaption>
-          <b>http://pn/</b> as of 13 August 2021.
+          <b>http://pn/</b> as of 13 Aug. 2021.
         </figcaption>
       </figure>
       <figure>
         <img src="./screenshots/2021-08-13_tk.png">
         <figcaption>
-          <b>tk:443</b> as of 13 August 2021.
+          <b>tk:443</b> as of 13 Aug. 2021.
         </figcaption>
       </figure>
       <figure>
         <img src="./screenshots/2021-08-13_uz.png">
         <figcaption>
-          <b>https://uz/</b> as of 13 August 2021.
+          <b>https://uz/</b> as of 13 Aug. 2021.
         </figcaption>
       </figure>
     </section>
@@ -245,7 +283,7 @@
         </tbody>
       </table>
     </section>
-    <p class="timestamp">Last checked: 3 January 2021.</p>
+    <p class="timestamp">Last checked: 3 Jan. 2022.</p>
     <h3>
       <a id="aaaaa-historical" href="#aaaaa-historical">#</a>
       Historical
@@ -272,6 +310,15 @@
             <td><a href="http://193.223.78.210/">193.223.78.210</a></td>
             <td>No</td>
             <td>2013<a href="#ref5">[5]</a></td>
+          </tr>
+          <tr>
+            <td>Bahrain</td>
+            <td>.bh</td>
+            <td>http://bh/</td>
+            <td><a href="http://88.201.27.211/">88.201.27.211</a><br>
+              <a href="http://10.10.10.10/">10.10.10.10</a></td>
+            <td>No</td>
+            <td>Jan. 2022</td>
           </tr>
           <tr>
             <td>Denmark</td>
@@ -349,6 +396,18 @@
         </tbody>
       </table>
     </section>
+    <h4>
+      <a id="aaaaa-screenshots" href="#aaaaa-hist-shots">#</a>
+      Screenshots
+    </h4>
+    <section class="gallery">
+      <figure>
+        <img src="./screenshots/2021-08-13_bh.png">
+        <figcaption>
+          <b>http://bh/</b> as of 13 Aug. 2021.
+        </figcaption>
+      </figure>
+    </section>
     <hr>
     <h2>
       <a id="mx" href="#mx">#</a>
@@ -366,7 +425,7 @@
           <th>Email server<br>(MX)</th>
           <th>First seen on</th>
         </thead>
-        <tbody>
+        <tbody class="td-last-center">
           <tr>
             <td>Central African Republic</td>
             <td>.cf</td>
@@ -400,7 +459,7 @@
           <tr>
             <td>Cambodia</td>
             <td>.kh</td>
-            <td>ns1.dns.net.KH</td>
+            <td>ns1.dns.net.kh</td>
             <td>2013<a href="#ref5">[5]</a></td>
           </tr>
           <tr>
@@ -426,7 +485,7 @@
             <td>Mauritania</td>
             <td>.mr</td>
             <td>mail.nic.mr</td>
-            <td>August 2021</td>
+            <td>Aug. 2021</td>
           </tr>
           <tr>
             <td>Panama</td>
@@ -442,13 +501,13 @@
               mx3.sendnow.ph<br>
               mx4.sendnow.ph<br>
               mx5.sendnow.ph</td>
-            <td>August 2021</td>
+            <td>Aug. 2021</td>
           </tr>
           <tr>
             <td>Suriname</td>
             <td>.sr</td>
             <td>spsbbank.sr</td>
-            <td>August 2021</td>
+            <td>Aug. 2021</td>
           </tr>
           <tr>
             <td>Trinidad and Tobago</td>
@@ -466,7 +525,7 @@
         </tbody>
       </table>
     </section>
-    <p class="timestamp">Last checked: 3 January 2022.</p>
+    <p class="timestamp">Last checked: 3 Aug. 2022.</p>
     <h3>
       <a id="mx-historical" href="#mx-historical">#</a>
       Historical
@@ -572,13 +631,13 @@
       <li>
         Thanks to <b>Jan Schaumann</b> for writing about quirks of TLDs (on their
         blog, at <a href="https://www.netmeister.org/blog/tlds.html">netmeister.org/blog/tlds.html</a>,
-        and on Twitter at <a href="https://twitter.com/jschauma/status/1426003590997495812">twitter.com/i/status/1426003590997495812</a>),
+        and on Twitter at <a href="https://twitter.com/jschauma/status/1426003590997495812">twitter.com/i/status/<span style="word-break:break-all">1426003590997495812</span></a>),
         which is what inspired the creation of this page in the first place!
       </li>
     </ul>
     <p class="timestamp">
       Made with ♥&#xFE0E;<!--&#xFE0E;[Ref] stackoverflow.com/a/38452396/4824627-->
-      by Matheus Avellar<br>Last updated on January 2022
+      by Matheus Avellar<br>Last updated on Aug. 2022
     </p>
   </footer>
   <link rel="preload" as="style" href="https://rsms.me/inter/inter.css">
