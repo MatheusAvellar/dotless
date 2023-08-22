@@ -1,39 +1,37 @@
 
 A records ---------------------
-ai has address 209.59.119.34
-cm has address 195.24.205.60
-pn has address 139.162.17.173
-tk has address 217.119.57.22
-uz has address 91.212.89.8
-ws has address 64.70.19.33
+AI has address 209.59.119.34
+ARAB has address 127.0.53.53
+CM has address 195.24.205.60
+MUSIC has address 127.0.53.53
+PN has address 139.162.17.173
+TK has address 217.119.57.22
+UZ has address 91.212.89.8
+WS has address 64.70.19.33
 AAAA records ------------------
-va has IPv6 address 2a01:b8:0:1:212:77:0:110
-va has IPv6 address 2a01:b8:0:1:212:77:0:2
+VA has IPv6 address 2a01:b8:0:1:212:77:0:110
+VA has IPv6 address 2a01:b8:0:1:212:77:0:2
 MX records --------------------
-ai mail is handled by 10 mail.offshore.ai.
-cf mail is handled by 0 mail.intnet.cf.
-gp mail is handled by 10 ns1.nic.gp.
-gt mail is handled by 10 aspmx.l.google.com.
-gt mail is handled by 20 alt1.aspmx.l.google.com.
-gt mail is handled by 20 alt2.aspmx.l.google.com.
-gt mail is handled by 30 aspmx2.googlemail.com.
-gt mail is handled by 30 aspmx4.googlemail.com.
-gt mail is handled by 30 aspmx5.googlemail.com.
-hr mail is handled by 5 alpha.carnet.hr.
-kh mail is handled by 10 ns1.dns.net.kh.
-km mail is handled by 100 mail1.comorestelecom.km.
-lk mail is handled by 10 malithi-slt.nic.lk.
-lk mail is handled by 20 malithi-lc.nic.lk.
-mq mail is handled by 10 mx1-mq.mediaserv.net.
-mr mail is handled by 5 mail.nic.mr.
-pa mail is handled by 5 ns.pa.
-ph mail is handled by 10 mx1.sendnow.ph.
-ph mail is handled by 20 mx2.sendnow.ph.
-ph mail is handled by 30 mx3.sendnow.ph.
-ph mail is handled by 40 mx4.sendnow.ph.
-ph mail is handled by 50 mx5.sendnow.ph.
-sr mail is handled by 10 spsbbank.sr.
-tt mail is handled by 1 aspmx.l.google.com.
-tt mail is handled by 10 alt1.aspmx.l.google.com.
-ua mail is handled by 10 mr.kolo.net.
-ws mail is handled by 10 mail.worldsite.ws.
+AI mail is handled by 10 mail.offshore.AI.
+ARAB mail is handled by 10 your-dns-needs-immediate-attention.ARAB.
+CF mail is handled by 0 mail.intnet.CF.
+GP mail is handled by 10 ns1.nic.GP.
+GT mail is handled by 10 ASPMX.L.GOOGLE.COM.
+GT mail is handled by 20 ALT1.ASPMX.L.GOOGLE.COM.
+GT mail is handled by 20 ALT2.ASPMX.L.GOOGLE.COM.
+GT mail is handled by 30 ASPMX2.GOOGLEMAIL.COM.
+GT mail is handled by 30 ASPMX4.GOOGLEMAIL.COM.
+GT mail is handled by 30 ASPMX5.GOOGLEMAIL.COM.
+HR mail is handled by 5 alpha.carnet.HR.
+KM mail is handled by 100 mail1.comorestelecom.KM.
+LK mail is handled by 10 malithi-slt.nic.LK.
+LK mail is handled by 20 malithi-lc.nic.LK.
+MQ mail is handled by 10 mx1-mq.mediaserv.net.
+MR mail is handled by 5 mail.nic.MR.
+MUSIC mail is handled by 10 your-dns-needs-immediate-attention.MUSIC.
+PA mail is handled by 5 ns.PA.
+SR mail is handled by 10 spsbbank.SR.
+TT mail is handled by 1 aspmx.l.google.com.
+TT mail is handled by 10 alt1.aspmx.l.google.com.
+UA mail is handled by 10 mr.kolo.net.
+WS mail is handled by 10 mail.worldsite.WS.

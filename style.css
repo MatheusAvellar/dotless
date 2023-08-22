@@ -129,13 +129,13 @@ h4:hover > a[href^="#"], h4:focus-within > a[href^="#"] {
   overflow-x: auto;
   white-space: nowrap;
 }
-figure {
+main figure {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
   margin: 1em;
 }
-figure img {
+main figure img {
   max-height: 40rem;
   max-width: 300px;
   width: 100%;
@@ -146,7 +146,7 @@ figure img {
   box-shadow: 5px 5px 10px 0 #ececec;
   background-color: #f8f8f8;
 }
-figure figcaption {
+main figure figcaption {
   margin-top: 1em;
 }
 
