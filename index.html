@@ -6,8 +6,12 @@
 	<meta name="author" content="Matheus Avellar">
 	<meta name="description" content="List of active and historical dotless domains!">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#000">
 	<link rel="preconnect" href="https://cdn.avl.la" crossorigin>
-	<link rel="stylesheet" href="./style.css?v2">
+	<link rel="stylesheet" href="./style.css?v3">
 </head>
 <body>
 	<header>
@@ -62,6 +66,7 @@
 					<li><a href="#mx-historical">Historical</a></li>
 				</ol>
 			</li>
+			<li><a href="#bonus">Bonus: Dotless Dot?</a></li>
 			<li><a href="#special-thanks">Special Thanks</a></li>
 			<li><a href="#references">References</a></li>
 		</ol>
@@ -584,6 +589,42 @@
 			</table>
 		</section>
 		<hr>
+		<h2>
+			<a id="bonus" href="#bonus">#</a>
+			Bonus: Dotless Dot?
+		</h2>
+		<p>
+			Dotless domains work because Top Level Domains are just as much nodes in
+			the DNS tree as Second Level Domains, or any other level beneath them.
+			That means they can contain A, AAAA and MX records.
+		</p>
+		<p>
+			Another, often forgotten node in the DNS tree is <b>the root</b>,
+			represented by a single dot. It's the parent of all TLDs! Technically
+			speaking, every domain terminates with a dot: [example.com] is, in fact,
+			[example.com<b>.</b>]; "example" is a child of "com" which, in turn, is a
+			child of "<b>.</b>".
+		</p>
+		<p>
+			Followed to its logical conclusion, this means the root domain could also
+			contain A, AAAA and MX records! That is, accessing
+			<a href="http://./">http://<b>.</b>/</a> or emailing
+			example@<b>.</b> is, at least in theory, possible.
+		</p>
+		<p>
+			However, the odds of that happening are very nearly zero; as such, the
+			root doesn't have A, AAAA or MX records – and likely won't, ever.
+		</p>
+		<section class="gallery">
+			<figure>
+				<a href="./screenshots/2023-09-03_root.png" data-llb-src="href">
+					<img src="./screenshots/2023-09-03_root.png">
+				</a>
+				<figcaption data-llb-caption="visible">
+					<b>http://./</b> as of 3 Sep. 2023.
+				</figcaption>
+			</figure>
+		</section>
 	</main>
 	<footer>
 		<h2>

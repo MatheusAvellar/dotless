@@ -107,7 +107,7 @@ h3 > a[href^="#"],
 h4 > a[href^="#"] {
   scroll-margin-top: 1em;
   color: #d2d2d2;
-  transition: color .2s ease;
+  transition: color .1s ease;
 }
 h1:hover > a[href^="#"], h1:focus-within > a[href^="#"],
 h2:hover > a[href^="#"], h2:focus-within > a[href^="#"],
