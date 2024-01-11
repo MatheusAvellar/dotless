@@ -4,7 +4,6 @@ AI has address 209.59.119.34
 ARAB has address 127.0.53.53
 CM has address 195.24.205.60
 MUSIC has address 127.0.53.53
-PN has address 139.162.17.173
 TK has address 217.119.57.22
 UZ has address 91.212.89.8
 WS has address 64.70.19.33

@@ -27,6 +27,7 @@ h1 + h2, h2 + h3, h3 + h4 {
 header > p, main > p, footer > p {
   margin: .75em 100px;
   line-height: 1.35;
+  text-indent: 1rem;
 }
 ul, ol {
   padding-inline-start: 40px;
