@@ -79,6 +79,11 @@
 			<a id="aaaaa-current" href="#aaaaa-current">#</a>
 			Current
 		</h3>
+		<p>
+			These are TLDs that, as of the last check, contain apex records. Many have
+			had those records since the IETF compiled a list in 2013;<a href="#ref5">[5]</a>
+			other dates indicate an observation by me, directly.
+		</p>
 		<section class="table-wrapper">
 			<table>
 				<thead>
@@ -91,21 +96,19 @@
 					<th>First seen on</th>
 				</thead>
 				<tbody>
-					<tr class="alive">
-						<td>Anguilla (UK)</td>
-						<td>.ai</td>
-						<td><a href="http://ai./">http://ai/</a></td>
-						<td><a href="http://209.59.119.34/">209.59.119.34</a></td>
-						<td>mail.offshore.ai</td>
+					<tr>
+						<td>Bangladesh</td>
+						<td>.bd</td>
+						<td><a href="http://bd./">http://bd/</a></td>
+						<td><a href="http://203.112.194.232/">203.112.194.232</a></td>
+						<td>No</td>
 						<td>
 							<dl>
-								<dt>HTTP</dt>
-								<dd>Alive (information page)</dd>
-								<dt>HTTPS</dt>
-								<dd>Connection refused</dd>
+								<dt>HTTP/S</dt>
+								<dd>Timeout</dd>
 							</dl>
 						</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>Mar. 2025</td>
 					</tr>
 					<tr class="no-content">
 						<td>Cameroon</td>
@@ -121,7 +124,7 @@
 								<dd>SSH open</dd>
 							</dl>
 						</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Tokelau (NZ)</td>
@@ -135,7 +138,7 @@
 								<dd>Timeout</dd>
 							</dl>
 						</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr class="alive">
 						<td>Uzbekistan</td>
@@ -151,22 +154,7 @@
 								<dd>Alive (<a href="https://cctld.uz/">cctld.uz</a> mirror)</dd>
 							</dl>
 						</td>
-						<td>2013<a href="#ref5">[5]</a></td>
-					</tr>
-					<tr>
-						<td>Vatican</td>
-						<td>.va</td>
-						<td><a href="http://va./">http://va/</a></td>
-						<td><a href="http://[2a01:b8:0:1:212:77:0:2]/">[2a01:b8:0:1:212:77:0:2]</a><br>
-							<a href="http://[2a01:b8:0:1:212:77:0:110]/">[2a01:b8:0:1:212:77:0:110]</a></td>
-						<td>No</td>
-						<td>
-							<dl>
-								<dt>Other</dt>
-								<dd>No known open ports, aside from DNS</dd>
-							</dl>
-						</td>
-						<td>Aug. 2021</td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Samoa</td>
@@ -182,34 +170,17 @@
 								<dd>SSH timeout</dd>
 							</dl>
 						</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 				</tbody>
 			</table>
 		</section>
-		<p class="timestamp">Last checked: 10 Jan. 2024.</p>
+		<p class="timestamp">Last checked: 31 Mar. 2025.</p>
 		<h4>
 			<a id="aaaaa-screenshots" href="#aaaaa-screenshots">#</a>
 			Screenshots
 		</h4>
 		<section class="gallery">
-			<figure>
-				<a href="./screenshots/2022-10-23_ai.png" data-llb-src="href" data-llb-gallery>
-					<img src="./screenshots/2022-10-23_ai.png">
-				</a>
-				<figcaption data-llb-caption="visible">
-					<b>http://ai/</b> as of 23 Oct. 2022.
-				</figcaption>
-			</figure>
-			<figure>
-				<a href="./screenshots/2021-08-13_ai.png" data-llb-src="href" data-llb-gallery>
-					<img src="./screenshots/2021-08-13_ai.png">
-				</a>
-				<figcaption data-llb-caption="visible">
-					<b>http://ai/</b> on 13 Aug. 2021.<br>
-					(mirror of <a href="http://offshore.ai">offshore.ai</a>)
-				</figcaption>
-			</figure>
 			<figure>
 				<a href="./screenshots/2023-08-21_cm.png" data-llb-src="href" data-llb-gallery>
 					<img src="./screenshots/2023-08-21_cm.png">
@@ -231,7 +202,8 @@
 					<img src="./screenshots/2021-08-13_uz.png">
 				</a>
 				<figcaption data-llb-caption="visible">
-					<b>https://uz/</b> as of 13 Aug. 2021.
+					<b>https://uz/</b> as of 13 Aug. 2021.<br>
+					(mirror of <a href="https://cctld.uz">cctld.uz</a>)
 				</figcaption>
 			</figure>
 		</section>
@@ -246,9 +218,13 @@
 			requiring new TLDs to include a few apex DNS records on their TLDs for at
 			least 90 days.<a href="#ref4">[4]</a>
 		</p>
-		<p>
+		<!-- <p>
 			As such, the following TLDs also contain apex records, but they're merely
 			informational and don't point to real servers:
+		</p> -->
+		<p>
+			As of the last check, no TLDs had informational apex records. This is what
+			they usually look like:
 		</p>
 		<section class="table-wrapper">
 			<table>
@@ -260,27 +236,24 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>.arab</td>
-						<td rowspan="2"><a href="http://127.0.53.53/">127.0.53.53</a></td>
-						<td>your-dns-needs-immediate-attention.arab</td>
-						<td rowspan="2">"Your DNS configuration needs immediate attention see
+						<td>.example</td>
+						<td><a href="http://127.0.53.53/">127.0.53.53</a></td>
+						<td>your-dns-needs-immediate-attention.example</td>
+						<td>"Your DNS configuration needs immediate attention see
 							<a href="https://icann.org/namecollision">https://icann.org/namecollision</a>"</td>
-					</tr>
-					<tr>
-						<td>.music</td>
-						<td>your-dns-needs-immediate-attention.music</td>
 					</tr>
 				</tbody>
 			</table>
 		</section>
-		<p class="timestamp">Last checked: 10 Jan. 2024.</p>
+		<p class="timestamp">Last checked: 31 Mar. 2025.</p>
 		<h3>
 			<a id="aaaaa-historical" href="#aaaaa-historical">#</a>
 			Historical
 		</h3>
 		<p>
-			These are TLDs that previously had apex records, but no longer do so. The
-			bulk of it comes from a list by the IETF from 2013:
+			These are TLDs that previously had apex records, but no longer do so. Much
+			of it comes from a list compited by the IETF in 2013;<a href="#ref5">[5]</a>
+			other dates indicate an observation by me, directly.
 		</p>
 		<section class="table-wrapper">
 			<table>
@@ -299,7 +272,15 @@
 						<td>http://ac/</td>
 						<td><a href="http://193.223.78.210/">193.223.78.210</a></td>
 						<td>No</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
+					</tr>
+					<tr>
+						<td>Anguilla (UK)</td>
+						<td>.ai</td>
+						<td>http://ai/</td>
+						<td><a href="http://209.59.119.34/">209.59.119.34</a></td>
+						<td>mail.offshore.ai</td>
+						<td>2013—<br>Jan. 2024</td>
 					</tr>
 					<tr>
 						<td>Bahrain</td>
@@ -317,7 +298,7 @@
 						<td><a href="http://193.163.102.24/">193.163.102.24</a><br>
 							<a href="http://[2a01:630:0:40:b1a:b1a:2011:1]">[2a01:630:0:40:b1a:b1a:2011:1]</a></td>
 						<td>No</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Guernsey (UK)</td>
@@ -325,7 +306,7 @@
 						<td>http://gg/</td>
 						<td><a href="http://87.117.196.80/">87.117.196.80</a></td>
 						<td>No</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>British Indian<br>Ocean Territory (UK)</td>
@@ -333,7 +314,7 @@
 						<td>http://io/</td>
 						<td><a href="http://193.223.78.212/">193.223.78.212</a></td>
 						<td>mailer2.io</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Jersey (UK)</td>
@@ -341,7 +322,7 @@
 						<td>http://je/</td>
 						<td><a href="http://87.117.196.80/">87.117.196.80</a></td>
 						<td>No</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Cambodia</td>
@@ -349,7 +330,7 @@
 						<td>http://kh/</td>
 						<td><a href="http://203.223.32.21/">203.223.32.21</a></td>
 						<td>ns1.dns.net.kh</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Pitcairn Islands (UK)</td>
@@ -365,7 +346,7 @@
 						<td>http://sh/</td>
 						<td><a href="http://193.223.78.211/">193.223.78.211</a></td>
 						<td>No</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Turkmenistan</td>
@@ -373,7 +354,7 @@
 						<td>http://tm/</td>
 						<td><a href="http://193.223.78.213/">193.223.78.213</a></td>
 						<td>No</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Tonga</td>
@@ -381,7 +362,16 @@
 						<td>http://to/</td>
 						<td><a href="http://216.74.32.107/">216.74.32.107</a></td>
 						<td>No</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
+					</tr>
+					<tr>
+						<td>Vatican</td>
+						<td>.va</td>
+						<td>http://va/</td>
+						<td><a href="http://[2a01:b8:0:1:212:77:0:2]/">[2a01:b8:0:1:212:77:0:2]</a><br>
+							<a href="http://[2a01:b8:0:1:212:77:0:110]/">[2a01:b8:0:1:212:77:0:110]</a></td>
+						<td>No</td>
+						<td>Aug. 2021—<br>Jan. 2024</td>
 					</tr>
 					<tr>
 						<td>Virgin Islands (US)</td>
@@ -389,7 +379,7 @@
 						<td>http://vi/</td>
 						<td><a href="http://193.0.0.198/">193.0.0.198</a></td>
 						<td>No</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 				</tbody>
 			</table>
@@ -399,6 +389,23 @@
 			Screenshots
 		</h4>
 		<section class="gallery">
+			<figure>
+				<a href="./screenshots/2022-10-23_ai.png" data-llb-src="href">
+					<img src="./screenshots/2022-10-23_ai.png">
+				</a>
+				<figcaption data-llb-caption="visible">
+					<b>http://ai/</b> as of 23 Oct. 2022.
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="./screenshots/2021-08-13_ai.png" data-llb-src="href">
+					<img src="./screenshots/2021-08-13_ai.png">
+				</a>
+				<figcaption data-llb-caption="visible">
+					<b>http://ai/</b> on 13 Aug. 2021.<br>
+					(mirror of <a href="http://offshore.ai">offshore.ai</a>)
+				</figcaption>
+			</figure>
 			<figure>
 				<a href="./screenshots/2021-08-13_bh.png" data-llb-src="href">
 					<img src="./screenshots/2021-08-13_bh.png">
@@ -425,6 +432,13 @@
 			<a id="mx-current" href="#mx-current">#</a>
 			Current
 		</h3>
+		<p>
+			These are TLDs that, as of the last check, contain only MX apex records;
+			that is, they could, in theory, send and receive email, but have no
+			accessible website. Many have had those records since the IETF compiled a
+			list in 2013;<a href="#ref5">[5]</a> other dates indicate an observation
+			by me, directly.
+		</p>
 		<section class="table-wrapper">
 			<table>
 				<thead>
@@ -438,13 +452,13 @@
 						<td>Central African Republic</td>
 						<td>.cf</td>
 						<td>mail.intnet.cf</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Guadeloupe (FR)</td>
 						<td>.gp</td>
 						<td>ns1.nic.gp</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Guatemala</td>
@@ -456,32 +470,25 @@
 							alt1.aspmx.l.google.com<br>
 							alt2.aspmx.l.google.com<br>
 							</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Croatia</td>
 						<td>.hr</td>
 						<td>alpha.carnet.hr</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Comoros</td>
 						<td>.km</td>
 						<td>mail1.comorestelecom.km</td>
-						<td>2013<a href="#ref5">[5]</a></td>
-					</tr>
-					<tr>
-						<td>Sri Lanka</td>
-						<td>.lk</td>
-						<td>malithi-slt.nic.lk<br>
-							malithi-lc.nic.lk</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Martinique (FR)</td>
 						<td>.mq</td>
 						<td>mx1-mq.mediaserv.net</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Mauritania</td>
@@ -490,41 +497,31 @@
 						<td>Aug. 2021</td>
 					</tr>
 					<tr>
-						<td>Panama</td>
-						<td>.pa</td>
-						<td>ns.pa</td>
-						<td>2013<a href="#ref5">[5]</a></td>
-					</tr>
-					<tr>
-						<td>Suriname</td>
-						<td>.sr</td>
-						<td>spsbbank.sr</td>
-						<td>Aug. 2021</td>
-					</tr>
-					<tr>
 						<td>Trinidad and Tobago</td>
 						<td>.tt</td>
 						<td>aspmx.l.google.com<br>
 							alt1.aspmx.l.google.com</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Ukraine</td>
 						<td>.ua</td>
 						<td>mr.kolo.net</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 				</tbody>
 			</table>
 		</section>
-		<p class="timestamp">Last checked: 10 Jan. 2024.</p>
+		<p class="timestamp">Last checked: 31 Mar. 2025.</p>
 		<h3>
 			<a id="mx-historical" href="#mx-historical">#</a>
 			Historical
 		</h3>
 		<p>
 			Similarly to the historical A/AAAA records, these are TLDs that previously
-			(only) had apex MX records, but no longer do so:
+			(only) had apex MX records, but no longer do so. Many come from a list
+			compiled by the IETF in 2013;<a href="#ref5">[5]</a> other dates indicate
+			an observation by me, directly.
 		</p>
 		<section class="table-wrapper">
 			<table>
@@ -539,19 +536,32 @@
 						<td>Åland Islands (FI)</td>
 						<td>.ax</td>
 						<td>mail.aland.net</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Dominica</td>
 						<td>.dm</td>
 						<td>mail.nic.dm</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Cambodia</td>
 						<td>.kh</td>
 						<td>ns1.dns.net.kh</td>
 						<td>Jan. 2022—<br>Oct. 2022</td>
+					</tr>
+					<tr>
+						<td>Sri Lanka</td>
+						<td>.lk</td>
+						<td>malithi-slt.nic.lk<br>
+							malithi-lc.nic.lk</td>
+						<td>2013—<br>Jan. 2024</td>
+					</tr>
+					<tr>
+						<td>Panama</td>
+						<td>.pa</td>
+						<td>ns.pa</td>
+						<td>2013—<br>Jan. 2024</td>
 					</tr>
 					<tr>
 						<td>Philippines</td>
@@ -564,18 +574,24 @@
 						<td>Aug. 2021—<br>Oct. 2022</td>
 					</tr>
 					<tr>
+						<td>Suriname</td>
+						<td>.sr</td>
+						<td>spsbbank.sr</td>
+						<td>Aug. 2021—<br>Jan. 2024</td>
+					</tr>
+					<tr>
 						<td>Vatican</td>
 						<td>.va</td>
 						<td>raphaelmx1.posta.va<br>
 							raphaelmx2.posta.va<br>
 							raphaelmx3.posta.va</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 					<tr>
 						<td>Yemen</td>
 						<td>.ye</td>
 						<td>mail.yemen.net.ye</td>
-						<td>2013<a href="#ref5">[5]</a></td>
+						<td>2013</td>
 					</tr>
 				</tbody>
 			</table>
@@ -682,7 +698,7 @@
 		</ol>
 		<p class="timestamp">
 			Made with ♥&#xFE0E;<!--&#xFE0E;[Ref] stackoverflow.com/a/38452396/4824627-->
-			by Matheus Avellar<br>Last updated on Aug. 2023
+			by Matheus Avellar<br>Last updated on Mar. 2025
 		</p>
 	</footer>
 	<!-- ######### -->
