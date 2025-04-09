@@ -11,7 +11,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#000">
 	<link rel="preconnect" href="https://cdn.avl.la" crossorigin>
-	<link rel="stylesheet" href="./style.css?v4">
+	<link rel="stylesheet" href="./style.css?v5">
 </head>
 <body>
 	<header>
@@ -19,24 +19,31 @@
 	</header>
 	<main>
 		<p>
-			"Dotless domains" are domains that consist of a single label (e.g.
-			<a href="http://ai/">http://ai/</a>, as opposed to
-			http://<em>example</em>.ai/; or contact@<strong>pa</strong> as opposed to
-			contact@<em>example</em>.pa) due to there being A/AAAA or MX records in
-			the apex of a TLD zone.<a href="#ref1">[1]</a>
+			The term "dotless domain" usually refers to top-level domains (TLDs) –
+			think <em>com</em>, <em>gov</em>, etc – that are reachable themselves
+			using a web browser or email server.
 		</p>
 		<p>
-			ICANN is notoriously against the practice,<a href="#ref1">[1]</a> and
+			That is, they are working domains that consist of a single label:
+			<em>http://com/</em>, as opposed to
+			<em>http://example.com/</em>; or <em>contact@gov</em>, as opposed to
+			<em>contact@example.gov</em>. This can happen if the domain's DNS zone
+			contains A/AAAA or MX records in its apex.<a href="#ref1">[1]</a>
+		</p>
+		<p>
+			Both the ICANN and the IAB are notoriously against the
+			practice,<a href="#ref1">[1]</a><a href="#ref2">[2]</a> so ICANN
 			prohibits it where it can – namely, on gTLDs.<a href="#ref3">[3]</a>
-			However, ccTLDs are under the country's jurisdiction, so it can do as it
-			pleases, and as such there are examples of active dotless ccTLD domains.
+			However, ccTLDs (country code TLDs) fall largely under their own country's
+			jurisdiction! As such, there currently are and historically have been
+			examples of active dotless ccTLDs.
 		</p>
 		<p>
 			For email, the protocol itself would need to allow a dotless domain as a
 			destination address. According to ICANN's SSAC,<a href="#ref1">[1]</a>
-			SMTP requires at least two labels (i.e. "domain.tld") to deliver an email,
-			so it is unlikely Panama would receive an email sent to
-			<strong>contact@pa</strong>, for example. For completeness' sake, however,
+			SMTP requires at least two labels (i.e. <em>domain.tld</em>) to deliver an
+			email, so it is unlikely Mauritania would receive an email sent to
+			<em>contact@mr</em>, for example. For completeness' sake, however,
 			apex MX servers are listed below as well.
 		</p>
 		<p><b>Table of Contents:</b></p>
@@ -80,8 +87,8 @@
 			Current
 		</h3>
 		<p>
-			These are TLDs that, as of the last check, contain apex records. Many have
-			had those records since the IETF compiled a list in 2013;<a href="#ref5">[5]</a>
+			These are TLDs that, as of the last check, contain apex A or AAAA records.
+			Many have had those records since the IETF compiled a list in 2013;<a href="#ref5">[5]</a>
 			other dates indicate an observation by me, directly.
 		</p>
 		<section class="table-wrapper">
@@ -252,7 +259,7 @@
 		</h3>
 		<p>
 			These are TLDs that previously had apex records, but no longer do so. Much
-			of it comes from a list compited by the IETF in 2013;<a href="#ref5">[5]</a>
+			of it comes from a list compiled by the IETF in 2013;<a href="#ref5">[5]</a>
 			other dates indicate an observation by me, directly.
 		</p>
 		<section class="table-wrapper">
@@ -435,7 +442,7 @@
 		<p>
 			These are TLDs that, as of the last check, contain only MX apex records;
 			that is, they could, in theory, send and receive email, but have no
-			accessible website. Many have had those records since the IETF compiled a
+			reachable website. Many have had those records since the IETF compiled a
 			list in 2013;<a href="#ref5">[5]</a> other dates indicate an observation
 			by me, directly.
 		</p>
@@ -602,26 +609,27 @@
 			Bonus: Dotless Dot?
 		</h2>
 		<p>
-			Dotless domains work because Top Level Domains are just as much nodes in
-			the DNS tree as Second Level Domains, or any other level beneath them.
-			That means they can contain A, AAAA and MX records.
+			Dotless domains work because top-level domains (TLDs) are just as much
+			nodes in the DNS tree as second-level domains (SLDs), or any other level
+			beneath them. That means there is no technicaly limitation to their DNS
+			records, and they may contain A, AAAA and MX records.
 		</p>
 		<p>
 			Another, often forgotten node in the DNS tree is <b>the root</b>,
-			represented by a single dot. It's the parent of all TLDs! Technically
-			speaking, every domain terminates with a dot: [example.com] is, in fact,
-			[example.com<b>.</b>]; "example" is a child of "com" which, in turn, is a
-			child of "<b>.</b>".
+			represented by a single dot, <em>.</em>. It's the parent of all TLDs!
+			Though it's usually omitted, every domain terminates with a dot:
+			<em>example.com</em> is, in fact, <em>example.com.</em>; <em>example</em>
+			is a child of <em>com</em> which, in turn, is a child of <em>.</em>.
 		</p>
 		<p>
 			Followed to its logical conclusion, this means the root domain could also
 			contain A, AAAA and MX records! That is, accessing
-			<a href="http://./">http://<b>.</b>/</a> or emailing
-			example@<b>.</b> is, at least in theory, possible.
+			<em><a href="http://./">http://./</a></em> or emailing
+			<em>example@.</em> is, at least in theory, possible.
 		</p>
 		<p>
-			However, the odds of that happening are very nearly zero; as such, the
-			root doesn't have A, AAAA or MX records – and likely won't, ever.
+			Sadly, the odds of that ever happening are very nearly zero. The
+			root doesn't have A, AAAA or MX records and likely won't, ever.
 		</p>
 		<section class="gallery">
 			<figure>
