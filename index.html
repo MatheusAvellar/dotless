@@ -700,6 +700,20 @@
 				This has been fixed. Thanks to <a href="https://github.com/MegaManSec">Joshua Rogers</a>
 				for bringing my attention to it!
 			</dd>
+			<dt><strong>2025-05-11</strong></dt>
+			<dd>
+				This page was <a href="https://news.ycombinator.com/item?id=43950525">posted
+				to Hacker News</a> – purportedly due to a previous thread discussing the
+				redundancy of "vatican.va" – and the incoming traffic of >100k requests
+				reached the Cloudflare Worker's daily limit for a free account. Some
+				people wondered in the comments of the thread why a static website would
+				even need the Worker – and it doesn't! I had only added it to test the
+				feature, and all it did was include an "X-Powered-By: pizza" header to
+				server responses. I never would have guessed I would get that many
+				requests in a day, so the cap was never a concern. Nevertheless, my
+				whole website went down as a result. Woops! The Worker has since been
+				removed, so all is well now.
+			</dd>
 		</dl>
 		<h2>
 			<a id="special-thanks" href="#special-thanks">#</a>
