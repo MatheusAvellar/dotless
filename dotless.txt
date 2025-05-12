@@ -5,16 +5,20 @@ CM has address 195.24.205.60
 TK has address 217.119.57.22
 UZ has address 91.212.89.8
 WS has address 64.70.19.33
+XN--L1ACC has address 180.149.98.234
+XN--L1ACC has address 202.131.4.60
+XN--L1ACC has address 218.100.84.27
+XN--NGBRX has address 127.0.53.53
 AAAA records ------------------
 MX records --------------------
 CF mail is handled by 0 mail.intnet.CF.
 GP mail is handled by 10 ns1.nic.GP.
-GT mail is handled by 10 ASPMX.L.GOOGLE.COM.
-GT mail is handled by 20 ALT1.ASPMX.L.GOOGLE.COM.
-GT mail is handled by 20 ALT2.ASPMX.L.GOOGLE.COM.
-GT mail is handled by 30 ASPMX2.GOOGLEMAIL.COM.
-GT mail is handled by 30 ASPMX4.GOOGLEMAIL.COM.
-GT mail is handled by 30 ASPMX5.GOOGLEMAIL.COM.
+GT mail is handled by 10 aspmx.l.google.com.
+GT mail is handled by 20 alt1.aspmx.l.google.com.
+GT mail is handled by 20 alt2.aspmx.l.google.com.
+GT mail is handled by 30 aspmx2.googlemail.com.
+GT mail is handled by 30 aspmx4.googlemail.com.
+GT mail is handled by 30 aspmx5.googlemail.com.
 HR mail is handled by 5 alpha.carnet.HR.
 KM mail is handled by 100 mail1.comorestelecom.KM.
 MQ mail is handled by 10 mx1-mq.mediaserv.net.
@@ -23,3 +27,5 @@ TT mail is handled by 1 aspmx.l.google.com.
 TT mail is handled by 10 alt1.aspmx.l.google.com.
 UA mail is handled by 10 mr.kolo.net.
 WS mail is handled by 10 mail.worldsite.WS.
+XN--MGBAH1A3HJKRD mail is handled by 5 mail.nic.mr.
+XN--NGBRX mail is handled by 10 your-dns-needs-immediate-attention.XN--NGBRX.

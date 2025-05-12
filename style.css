@@ -24,9 +24,11 @@ h1, h2, h3, h4 {
 h1 + h2, h2 + h3, h3 + h4 {
 	margin-top: .5em;
 }
-header > p, main > p, footer > p {
+header > p, main > p, footer > p, footer > dl {
 	margin: .75em 100px;
 	line-height: 1.35;
+}
+header > p, main > p, footer > p {
 	text-indent: 1rem;
 }
 ul, ol {
@@ -37,7 +39,7 @@ ul, ol {
 	h1, h2, h3, h4 {
 		margin: 1.5em 0 .5em;
 	}
-	header > p, main > p, footer > p {
+	header > p, main > p, footer > p, footer > dl {
 		margin: .75em 0;
 		line-height: 1.35;
 	}
