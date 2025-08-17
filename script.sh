@@ -23,7 +23,7 @@ total=$(wc -l _TLDs.txt | awk '{ print $1 }')
 echo "Found $total TLDs"
 
 # Clear preliminar output file
-echo "" > _results.txt
+: > _results.txt
 
 echo "Querying TLDs..."
 i=0
@@ -32,11 +32,11 @@ while read tld; do
 	i=$((i+1))
 	echo "$tld ($i/$total)"
 	# Kill query if it doesn't finish after 15s
-	timeout 15s host $tld. >> _results.txt
+	timeout 15s host $tld. 8.8.8.8 >> _results.txt
 done < _TLDs.txt;
 
 # Print and save the results
-touch ../dotless.txt
+: > ../dotless.txt
 echo "Done!"
 echo "A records ---------------------"                | tee -a ../dotless.txt
 grep -iE "^[A-Za-z0-9\-]+ has address" _results.txt     | sort -uf | tr '[:upper:]' '[:lower:]' | tee -a ../dotless.txt
