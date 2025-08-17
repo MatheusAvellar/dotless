@@ -37,7 +37,9 @@ jobs:
     - run: git pull
 
     - name: Run dotless script
-      run: ./script.sh
+      run: |
+        chmod +x ./script.sh
+        bash ./script.sh
 
     - name: Commit files
       id: commit_step
