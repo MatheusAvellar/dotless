@@ -9,6 +9,8 @@
 # There may be additional unknown and unintended consequences. However, the
 # speed gain is significant enough to justify the changes.
 
+echo "Using $(which timeout) and $(which host)"
+
 mkdir _tmp
 cd _tmp
 echo "Getting list of current TLDs from IANA..."
