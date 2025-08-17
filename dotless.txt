@@ -25,3 +25,6 @@ ua mail is handled by 10 mr.kolo.net.
 ws mail is handled by 10 mail.worldsite.ws.
 xn--mgbah1a3hjkrd mail is handled by 5 mail.nic.mr.
 xn--ngbrx mail is handled by 10 your-dns-needs-immediate-attention.xn--ngbrx.
+A records ---------------------
+AAAA records ------------------
+MX records --------------------
