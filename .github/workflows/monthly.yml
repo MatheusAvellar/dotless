@@ -1,0 +1,67 @@
+name: Monthly zone check
+
+on:
+  schedule:
+    # Runs at 12:00 UTC on the first of every month
+    - cron: '0 12 1 * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets the permissions for the GITHUB_TOKEN for this workflow
+permissions:
+  contents: write
+  id-token: write
+  issues: write
+
+jobs:
+  check_dotless:
+    runs-on: ubuntu-22.04
+    outputs:
+      should_update: ${{ steps.commit_step.outputs.should_update }}
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        persist-credentials: true
+
+      # Situation: we sometimes get an HTTP 404 error when `apt-get update`ing.
+      # We need to run `apt-get upgrade` to solve that. But I've noticed Firefox
+      # (comes preinstalled) takes a long while to upgrade. So we remove it first
+    - name: Setup apt
+      run: |
+        sudo apt-get remove --purge firefox powershell && sudo apt-get autoremove
+        sudo apt-get -y upgrade
+        sudo apt-get update && sudo apt-get install libgetdns-dev
+
+    - run: git pull
+
+    - name: Run dotless script
+      run: ./script.sh
+
+    - name: Commit files
+      id: commit_step
+      run: |
+        git config --local user.email "dotless-check@avl.la"
+        git config --local user.name "Dotless Domains GitHub Action"
+        git add zone
+        git commit -m "[bot] check dotless ($(date -u +"%Y-%m-%d %H:%M"))" || exit 0
+        git pull --rebase
+        git push || (git pull --rebase && git push) || (sleep 30 && git pull --rebase && git push)
+        echo "should_update='yes'" >> "$GITHUB_OUTPUT"
+
+
+  create_issue:
+    needs: check_dotless
+    runs-on: ubuntu-latest
+    if: "contains(needs.check_dotless.outputs.should_update, 'yes')"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create issue
+        uses: JasonEtco/create-an-issue@v2.9.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/ACTIONS_ISSUE_TEMPLATE.md

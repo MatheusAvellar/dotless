@@ -1,28 +1,27 @@
-
 A records ---------------------
-BD has address 203.112.194.232
-CM has address 195.24.205.60
-TK has address 217.119.57.22
-UZ has address 91.212.89.8
-WS has address 64.70.19.33
-XN--NGBRX has address 127.0.53.53
+bd has address 203.112.194.232
+cm has address 195.24.205.60
+tk has address 217.119.57.22
+uz has address 91.212.89.8
+ws has address 64.70.19.33
+xn--ngbrx has address 127.0.53.53
 AAAA records ------------------
 MX records --------------------
-CF mail is handled by 0 mail.intnet.CF.
-GP mail is handled by 10 ns1.nic.GP.
-GT mail is handled by 10 aspmx.l.google.com.
-GT mail is handled by 20 alt1.aspmx.l.google.com.
-GT mail is handled by 20 alt2.aspmx.l.google.com.
-GT mail is handled by 30 aspmx2.googlemail.com.
-GT mail is handled by 30 aspmx4.googlemail.com.
-GT mail is handled by 30 aspmx5.googlemail.com.
-HR mail is handled by 5 alpha.carnet.HR.
-KM mail is handled by 100 mail1.comorestelecom.KM.
-MQ mail is handled by 10 mx1-mq.mediaserv.net.
-MR mail is handled by 5 mail.nic.MR.
-TT mail is handled by 1 aspmx.l.google.com.
-TT mail is handled by 10 alt1.aspmx.l.google.com.
-UA mail is handled by 10 mr.kolo.net.
-WS mail is handled by 10 mail.worldsite.WS.
-XN--MGBAH1A3HJKRD mail is handled by 5 mail.nic.mr.
-XN--NGBRX mail is handled by 10 your-dns-needs-immediate-attention.XN--NGBRX.
+cf mail is handled by 0 mail.intnet.cf.
+gp mail is handled by 10 ns1.nic.gp.
+gt mail is handled by 10 aspmx.l.google.com.
+gt mail is handled by 20 alt1.aspmx.l.google.com.
+gt mail is handled by 20 alt2.aspmx.l.google.com.
+gt mail is handled by 30 aspmx2.googlemail.com.
+gt mail is handled by 30 aspmx4.googlemail.com.
+gt mail is handled by 30 aspmx5.googlemail.com.
+hr mail is handled by 5 alpha.carnet.hr.
+km mail is handled by 100 mail1.comorestelecom.km.
+mq mail is handled by 10 mx1-mq.mediaserv.net.
+mr mail is handled by 5 mail.nic.mr.
+tt mail is handled by 1 aspmx.l.google.com.
+tt mail is handled by 10 alt1.aspmx.l.google.com.
+ua mail is handled by 10 mr.kolo.net.
+ws mail is handled by 10 mail.worldsite.ws.
+xn--mgbah1a3hjkrd mail is handled by 5 mail.nic.mr.
+xn--ngbrx mail is handled by 10 your-dns-needs-immediate-attention.xn--ngbrx.

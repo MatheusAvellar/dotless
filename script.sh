@@ -27,21 +27,21 @@ echo "Querying TLDs..."
 i=0
 # For every ccTLD in the list
 while read tld; do
-  i=$((i+1))
-  echo "$tld ($i/$total)"
-  # Kill query if it doesn't finish after 15s
-  timeout 15s host $tld. >> _results.txt
+	i=$((i+1))
+	echo "$tld ($i/$total)"
+	# Kill query if it doesn't finish after 15s
+	timeout 15s host $tld. >> _results.txt
 done < _TLDs.txt;
 
 # Print and save the results
-echo "" > ../dotless.txt
+touch ../dotless.txt
 echo "Done!"
 echo "A records ---------------------"                | tee -a ../dotless.txt
-grep -iE "^[A-Za-z0-9\-]+ has address" _results.txt     | sort -uf | tee -a ../dotless.txt
+grep -iE "^[A-Za-z0-9\-]+ has address" _results.txt     | sort -uf | tr '[:upper:]' '[:lower:]' | tee -a ../dotless.txt
 echo "AAAA records ------------------"                | tee -a ../dotless.txt
-grep -iE "^[A-Za-z0-9\-]+ has IPv6" _results.txt        | sort -uf | tee -a ../dotless.txt
+grep -iE "^[A-Za-z0-9\-]+ has IPv6" _results.txt        | sort -uf | tr '[:upper:]' '[:lower:]' | tee -a ../dotless.txt
 echo "MX records --------------------"                | tee -a ../dotless.txt
-grep -iE "^[A-Za-z0-9\-]+ mail is handled" _results.txt | sort -uf | tee -a ../dotless.txt
+grep -iE "^[A-Za-z0-9\-]+ mail is handled" _results.txt | sort -uf | tr '[:upper:]' '[:lower:]' | tee -a ../dotless.txt
 
 # Clean up after ourselves
 rm _rawTLDs.txt _TLDs.txt _results.txt
