@@ -1,4 +1,6 @@
 name: Manual deploy
+# Source:
+# https://github.com/actions/starter-workflows/blob/58e7cd05f5fafcdf73c5efd768127bc8522cfd98/pages/static.yml
 
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -10,12 +12,28 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
