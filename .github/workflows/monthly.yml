@@ -32,7 +32,10 @@ jobs:
       run: |
         sudo apt-get remove --purge firefox powershell && sudo apt-get autoremove
         sudo apt-get -y upgrade
-        sudo apt-get update && sudo apt-get install coreutils dnsutils
+      continue-on-error: true
+
+    - name: Update apt
+      run: sudo apt-get update && sudo apt-get install coreutils dnsutils
 
     - run: git pull
 
