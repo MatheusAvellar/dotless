@@ -7,6 +7,7 @@ ws has address 64.70.19.33
 xn--ngbrx has address 127.0.53.53
 AAAA records ------------------
 MX records --------------------
+as mail is handled by 0 no.mx.nic.as.
 cf mail is handled by 0 mail.intnet.cf.
 gp mail is handled by 10 ns1.nic.gp.
 gt mail is handled by 10 aspmx.l.google.com.
