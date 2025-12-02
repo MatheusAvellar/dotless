@@ -34,15 +34,39 @@
 			Both the ICANN and the IAB are notoriously against the
 			practice,<a href="#ref1">[1]</a><a href="#ref2">[2]</a> so ICANN
 			prohibits it where it can – namely, on gTLDs.<a href="#ref3">[3]</a>
-			However, ccTLDs (country code TLDs) fall largely under their own country's
-			jurisdiction! As such, there currently are and historically have been
-			examples of active dotless ccTLDs.
+			However, DNS is decentralized, and ccTLDs (i.e. country code TLDs) fall
+			largely under their own country's jurisdiction! As such, there currently
+			are and historically have been examples of active dotless ccTLDs.
 		</p>
 		<p>
 			For email, the protocol itself would need to allow a dotless domain as a
-			destination address. According to ICANN's SSAC,<a href="#ref1">[1]</a>
-			SMTP requires at least two labels (i.e. <em>domain.tld</em>) to deliver an
-			email, so it is unlikely Mauritania would receive an email sent to
+			destination address. ICANN's SSAC argues that SMTP requires at least two
+			labels (i.e. <em>domain.tld</em>) to deliver an email,<a href="#ref1">[1]</a>
+			likely due to the following excerpts in <a href="https://datatracker.ietf.org/doc/html/rfc5321#section-2.3.5">the SMTP specification</a>:
+		</p>
+		<blockquote>
+			<p>
+				The domain name [...] is the entire, fully-qualified name.
+				A domain name that is not in FQDN form is no more than a local alias.
+				Local aliases MUST NOT appear in any SMTP transaction.
+			</p>
+			<p>
+				[...] Local nicknames or unqualified names MUST NOT be used.
+			</p>
+		</blockquote>
+		<p>
+			However, dotless domains really are FQDN after all – as they include all
+			labels required to uniquely identify the domain –, and the following
+			clause can be argued to explicitely allow any dotless domains that have
+			MX records:
+		</p>
+		<blockquote>
+			<p>
+				[...] names that can be resolved to MX RRs [...] are permitted
+			</p>
+		</blockquote>
+		<p>
+			Either way, it is unlikely Mauritania would receive an email sent to
 			<em>contact@mr</em>, for example. For completeness' sake, however,
 			apex MX servers are listed below as well.
 		</p>
@@ -89,8 +113,7 @@
 		</h3>
 		<p>
 			These are TLDs that, as of the last check, contain apex A or AAAA records.
-			Many have had those records since the IETF compiled a list in 2013;<a href="#ref5">[5]</a>
-			unless referenced, other dates indicate an observation by me, directly.
+			Unless referenced, dates indicate an observation by me, directly.
 		</p>
 		<section class="table-wrapper">
 			<table>
@@ -132,7 +155,9 @@
 								<dd>SSH open</dd>
 							</dl>
 						</td>
-						<td>2013</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Tokelau (NZ)</td>
@@ -146,7 +171,9 @@
 								<dd>Timeout</dd>
 							</dl>
 						</td>
-						<td>2013</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
 					</tr>
 					<tr class="alive">
 						<td>Uzbekistan</td>
@@ -162,7 +189,9 @@
 								<dd>Alive (<a href="https://cctld.uz/">cctld.uz</a> mirror)</dd>
 							</dl>
 						</td>
-						<td>2013</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Samoa</td>
@@ -178,7 +207,9 @@
 								<dd>SSH timeout</dd>
 							</dl>
 						</td>
-						<td>2013</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
 					</tr>
 				</tbody>
 			</table>
@@ -262,8 +293,8 @@
 			Historical
 		</h3>
 		<p>
-			These are TLDs that previously had apex records, but no longer do so. Much
-			of it comes from a list compiled by the IETF in 2013;<a href="#ref5">[5]</a>
+			These are TLDs that previously had apex records, but no longer do so. Some
+			come from a list compiled by the IETF in 2013;<a href="#ref5">[5]</a>
 			unless referenced, other dates indicate an observation by me, directly.
 		</p>
 		<section class="table-wrapper">
@@ -283,7 +314,20 @@
 						<td>http://ac/</td>
 						<td><a href="http://193.223.78.210/">193.223.78.210</a></td>
 						<td>No</td>
-						<td>2013</td>
+						<td>
+							Apr. 2009<sup><a title="Хабр" href="https://habr.com/ru/articles/57309/">[hb]</a></sup>—<br>
+							Dec. 2013
+						</td>
+					</tr>
+					<tr>
+						<td>Anguilla (UK)</td>
+						<td>.ai</td>
+						<td>http://ai/</td>
+						<td><a href="http://209.88.68.34/">209.88.68.34</a></td>
+						<td>?</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Anguilla (UK)</td>
@@ -292,8 +336,19 @@
 						<td><a href="http://209.59.119.34/">209.59.119.34</a></td>
 						<td>mail.offshore.ai</td>
 						<td>
-							2013—<br>
+							Apr. 2009<sup><a title="Хабр" href="https://habr.com/ru/articles/57309/">[hb]</a></sup>—<br>
 							Oct. 2024<sup><a title="archive.today" href="https://archive.ph/oTdVx">[at]</a></sup>
+						</td>
+					</tr>
+					<tr>
+						<td>Burundi</td>
+						<td>.bi</td>
+						<td>http://bi/</td>
+						<td><a href="http://196.2.8.205/">196.2.8.205</a></td>
+						<td>No</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>—<br>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
 						</td>
 					</tr>
 					<tr>
@@ -306,6 +361,27 @@
 						<td>Aug. 2021—<br>Jan. 2022</td>
 					</tr>
 					<tr>
+						<td>Cameroon</td>
+						<td>.cm</td>
+						<td>http://cm/</td>
+						<td><a href="http://195.24.192.17/">195.24.192.17</a></td>
+						<td>?</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>—<br>
+							Apr. 2009<sup><a title="Хабр" href="https://habr.com/ru/articles/57309/">[hb]</a></sup>
+						</td>
+					</tr>
+					<tr>
+						<td>Denmark</td>
+						<td>.dk</td>
+						<td>http://dk/</td>
+						<td><a href="http://193.163.102.24/">193.163.102.10</a></td>
+						<td>?</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>
+						</td>
+					</tr>
+					<tr>
 						<td>Denmark</td>
 						<td>.dk</td>
 						<td>http://dk/</td>
@@ -313,7 +389,7 @@
 							<a href="http://[2a01:630:0:40:b1a:b1a:2011:1]">[2a01:630:0:40:b1a:b1a:2011:1]</a></td>
 						<td>No</td>
 						<td>
-							2013—<br>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>—<br>
 							Mar. 2016<sup><a title="archive.today" href="https://archive.ph/HBRfK">[at]</a></sup>
 						</td>
 					</tr>
@@ -323,7 +399,30 @@
 						<td>http://gg/</td>
 						<td><a href="http://87.117.196.80/">87.117.196.80</a></td>
 						<td>No</td>
-						<td>2013</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>—<br>
+							Dec. 2013
+						</td>
+					</tr>
+					<tr>
+						<td>Hong Kong (CN)</td>
+						<td>.hk</td>
+						<td>http://hk/</td>
+						<td><a href="http://203.119.2.28/">203.119.2.28</a></td>
+						<td>No</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
+					</tr>
+					<tr>
+						<td>British Indian<br>Ocean Territory (UK)</td>
+						<td>.io</td>
+						<td>http://io/</td>
+						<td><a href="http://80.249.100.38/">80.249.100.38</a></td>
+						<td>?</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>British Indian<br>Ocean Territory (UK)</td>
@@ -331,7 +430,20 @@
 						<td>http://io/</td>
 						<td><a href="http://193.223.78.212/">193.223.78.212</a></td>
 						<td>mailer2.io</td>
-						<td>2013</td>
+						<td>
+							Apr. 2009<sup><a title="Хабр" href="https://habr.com/ru/articles/57309/">[hb]</a></sup>—<br>
+							Dec. 2013
+						</td>
+					</tr>
+					<tr>
+						<td>Isle of Man (UK)</td>
+						<td>.im</td>
+						<td>http://im/</td>
+						<td><a href="http://217.23.168.132/">217.23.168.132</a></td>
+						<td>?</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Jersey (UK)</td>
@@ -339,7 +451,10 @@
 						<td>http://je/</td>
 						<td><a href="http://87.117.196.80/">87.117.196.80</a></td>
 						<td>No</td>
-						<td>2013</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>—<br>
+							Dec. 2013
+						</td>
 					</tr>
 					<tr>
 						<td>Cambodia</td>
@@ -347,7 +462,17 @@
 						<td>http://kh/</td>
 						<td><a href="http://203.223.32.21/">203.223.32.21</a></td>
 						<td>ns1.dns.net.kh</td>
-						<td>2013</td>
+						<td>Jul. 2013—<br>Dec. 2013</td>
+					</tr>
+					<tr>
+						<td>Mongolia</td>
+						<td>.mn</td>
+						<td>https://mn./</td>
+						<td><a href="http://202.131.0.65/">202.131.0.65</a></td>
+						<td>?</td>
+						<td>
+							Apr. 2009<sup><a title="Хабр" href="https://habr.com/ru/articles/57309/">[hb]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Mongolia</td>
@@ -360,24 +485,68 @@
 						</td>
 						<td>No</td>
 						<td>
-							Sep. 2022<sup><a title="archive.today" href="https://archive.ph/3UijO">[at]</a></sup>—<br>May 2025
+							Aug. 2022<sup><a title="jameswillia.ms" href="https://jameswillia.ms/posts/shortest-urls.html">[jw]</a></sup>—<br>May 2025
+						</td>
+					</tr>
+					<tr>
+						<td>Philippines</td>
+						<td>.ph</td>
+						<td>http://ph/</td>
+						<td><a href="http://203.119.4.7/">203.119.4.7</a></td>
+						<td>No</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>—<br>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
 						</td>
 					</tr>
 					<tr>
 						<td>Pitcairn Islands (UK)</td>
 						<td>.pn</td>
 						<td>http://pn/</td>
-						<td><a href="http://139.162.17.173/">139.162.17.173</a></td>
+						<td>
+							<a href="http://80.68.93.100/">80.68.93.100</a><br>
+							<a href="http://139.162.17.173/">139.162.17.173</a>
+						</td>
 						<td>No</td>
-						<td>Aug. 2021—<br>Aug. 2023</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>—<br>
+							Aug. 2023
+						</td>
+					</tr>
+					<tr>
+						<td>Palau</td>
+						<td>.pw</td>
+						<td>http://pw/</td>
+						<td><a href="http://203.199.114.33/">203.199.114.33</a></td>
+						<td>No</td>
+						<td>
+							Apr. 2009<sup><a title="Хабр" href="https://habr.com/ru/articles/57309/">[hb]</a></sup>—<br>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Saint Helena (UK)</td>
 						<td>.sh</td>
 						<td>http://sh/</td>
-						<td><a href="http://193.223.78.211/">193.223.78.211</a></td>
+						<td>
+							<a href="http://64.251.31.234/">64.251.31.234</a><br>
+							<a href="http://193.223.78.211/">193.223.78.211</a>
+						</td>
 						<td>No</td>
-						<td>2013</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>—<br>
+							Dec. 2013
+						</td>
+					</tr>
+					<tr>
+						<td>Turkmenistan</td>
+						<td>.tm</td>
+						<td>http://tm/</td>
+						<td><a href="http://80.249.100.37/">80.249.100.37</a></td>
+						<td>?</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Turkmenistan</td>
@@ -385,17 +554,33 @@
 						<td>http://tm/</td>
 						<td><a href="http://193.223.78.213/">193.223.78.213</a></td>
 						<td>No</td>
-						<td>2013</td>
+						<td>
+							Apr. 2009<sup><a title="Хабр" href="https://habr.com/ru/articles/57309/">[hb]</a></sup>—<br>
+							Dec. 2013
+						</td>
 					</tr>
 					<tr>
 						<td>Tonga</td>
 						<td>.to</td>
 						<td>http://to/</td>
-						<td><a href="http://216.74.32.107/">216.74.32.107</a></td>
+						<td>
+							<a href="http://216.74.32.103/">216.74.32.103</a><br>
+							<a href="http://216.74.32.107/">216.74.32.107</a>
+						</td>
 						<td>No</td>
 						<td>
-							2013—<br>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>—<br>
 							Jan. 2017<sup><a title="archive.today" href="https://archive.ph/rFmdC">[at]</a></sup>
+						</td>
+					</tr>
+					<tr>
+						<td>Uzbekistan</td>
+						<td>.uz</td>
+						<td>http://uz/</td>
+						<td><a href="http://195.158.1.25/">195.158.1.25</a></td>
+						<td>?</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>
 						</td>
 					</tr>
 					<tr>
@@ -413,7 +598,17 @@
 						<td>http://vi/</td>
 						<td><a href="http://193.0.0.198/">193.0.0.198</a></td>
 						<td>No</td>
-						<td>2013</td>
+						<td>Jul. 2013—<br>Dec. 2013</td>
+					</tr>
+					<tr>
+						<td>Samoa</td>
+						<td>.ws</td>
+						<td>http://ws/</td>
+						<td><a href="http://63.101.245.10/">63.101.245.10</a></td>
+						<td>?</td>
+						<td>
+							Jan. 2007<sup><a title="Dirk Loss" href="https://www.dirk-loss.de/short-domains.htm">[dl]</a></sup>
+						</td>
 					</tr>
 				</tbody>
 			</table>
@@ -465,6 +660,14 @@
 					<b>http://pn/</b> on 21 Aug. 2023.
 				</figcaption>
 			</figure>
+			<figure>
+				<a href="./screenshots/2009-12-13_to.png" data-llb-src="href">
+					<img src="./screenshots/2009-12-13_to.png">
+				</a>
+				<figcaption data-llb-caption="visible">
+					<b>http://to/</b> on 13 Dec. 2009.<sup><a title="ServerFault" href="https://serverfault.com/a/93920">[sf1]</a></sup>
+				</figcaption>
+			</figure>
 		</section>
 		<hr>
 		<h2>
@@ -478,9 +681,7 @@
 		<p>
 			These are TLDs that, as of the last check, contain only MX apex records;
 			that is, they could, in theory, send and receive email, but have no
-			reachable website. Many have had those records since the IETF compiled a
-			list in 2013;<a href="#ref5">[5]</a> other dates indicate an observation
-			by me, directly.
+			reachable website. Unreferenced dates indicate an observation by me, directly.
 		</p>
 		<section class="table-wrapper">
 			<table>
@@ -492,7 +693,7 @@
 				</thead>
 				<tbody class="td-last-center">
 					<tr>
-						<td>American Samoa</td>
+						<td>American Samoa (US)</td>
 						<td>.as</td>
 						<td>no.mx.nic.as</td>
 						<td>Dec. 2025</td>
@@ -501,43 +702,80 @@
 						<td>Central African Republic</td>
 						<td>.cf</td>
 						<td>mail.intnet.cf</td>
-						<td>2013</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
+					</tr>
+					<tr>
+						<td>Djibouti</td>
+						<td>.dj</td>
+						<td>
+							smtp.intnet.dj<br>
+							relais2.intnet.dj
+						</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
+					</tr>
+					<tr>
+						<td>Dominica</td>
+						<td>.dm</td>
+						<td>mail.nic.dm</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Guadeloupe (FR)</td>
 						<td>.gp</td>
-						<td>ns1.nic.gp</td>
-						<td>2013</td>
+						<td>
+							ns1.nic.gp<br>
+							ns34259.ovh.net<br>
+							manta.outremer.com
+						</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Guatemala</td>
 						<td>.gt</td>
-						<td>aspmx2.googlemail.com<br>
+						<td>
+							mail.gt<br>
+							aspmx2.googlemail.com<br>
 							aspmx4.googlemail.com<br>
 							aspmx5.googlemail.com<br>
 							aspmx.l.google.com<br>
 							alt1.aspmx.l.google.com<br>
-							alt2.aspmx.l.google.com<br>
-							</td>
-						<td>2013</td>
+							alt2.aspmx.l.google.com
+						</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Croatia</td>
 						<td>.hr</td>
 						<td>alpha.carnet.hr</td>
-						<td>2013</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Comoros</td>
 						<td>.km</td>
 						<td>mail1.comorestelecom.km</td>
-						<td>2013</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Martinique (FR)</td>
 						<td>.mq</td>
 						<td>mx1-mq.mediaserv.net</td>
-						<td>2013</td>
+						<td>
+							Jun. 2010<sup><a title="ServerFault" href="https://serverfault.com/q/154991">[sf2]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Mauritania</td>
@@ -559,13 +797,15 @@
 						<td>.tt</td>
 						<td>aspmx.l.google.com<br>
 							alt1.aspmx.l.google.com</td>
-						<td>2013</td>
+						<td>Jul. 2013<a href="#ref5">[5]</a></td>
 					</tr>
 					<tr>
 						<td>Ukraine</td>
 						<td>.ua</td>
 						<td>mr.kolo.net</td>
-						<td>2013</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Vatican</td>
@@ -583,9 +823,9 @@
 		</h3>
 		<p>
 			Similarly to the historical A/AAAA records, these are TLDs that previously
-			(only) had apex MX records, but no longer do so. Many come from a list
-			compiled by the IETF in 2013;<a href="#ref5">[5]</a> other dates indicate
-			an observation by me, directly.
+			(only) had apex MX records, but no longer do so. Some come from a list
+			compiled by the IETF in 2013;<a href="#ref5">[5]</a> other unreferenced
+			dates indicate an observation by me, directly.
 		</p>
 		<section class="table-wrapper">
 			<table>
@@ -597,35 +837,96 @@
 				</thead>
 				<tbody class="td-last-center">
 					<tr>
+						<td>American Samoa (US)</td>
+						<td>.as</td>
+						<td>dca.relay.gdns.net</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
+					</tr>
+					<tr>
 						<td>Åland Islands (FI)</td>
 						<td>.ax</td>
 						<td>mail.aland.net</td>
-						<td>2013</td>
+						<td>Jul. 2013—<br>Dec. 2013</td>
+					</tr>
+					<tr>
+						<td>Benin</td>
+						<td>.bj</td>
+						<td>mail6.domain-mail.com</td>
+						<td>
+							Jun. 2010<sup><a title="ServerFault" href="https://serverfault.com/q/154991">[sf2]</a></sup>
+						</td>
+					</tr>
+					<tr>
+						<td>Democratic Republic<br>of the Congo</td>
+						<td>.cd</td>
+						<td>mail.nic.CD</td>
+						<td>Jul. 2013—<br>Aug. 2013</td>
 					</tr>
 					<tr>
 						<td>Dominica</td>
 						<td>.dm</td>
 						<td>mail.nic.dm</td>
-						<td>2013</td>
+						<td>Jul. 2013—<br>Dec. 2013</td>
 					</tr>
 					<tr>
 						<td>Cambodia</td>
 						<td>.kh</td>
 						<td>ns1.dns.net.kh</td>
-						<td>Jan. 2022—<br>Oct. 2022</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>—<br>
+							Oct. 2022
+						</td>
 					</tr>
 					<tr>
 						<td>Sri Lanka</td>
 						<td>.lk</td>
 						<td>malithi-slt.nic.lk<br>
 							malithi-lc.nic.lk</td>
-						<td>2013—<br>Jan. 2024</td>
+						<td>Jul. 2013—<br>Jan. 2024</td>
+					</tr>
+					<tr>
+						<td>Marshall Islands</td>
+						<td>.mh</td>
+						<td>
+							imap.pwke.twtelecom.net<br>
+							mx1.mail.twtelecom.net<br>
+							mx2.mail.twtelecom.net
+						</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>—<br>
+							Jun. 2010<sup><a title="ServerFault" href="https://serverfault.com/q/154991">[sf2]</a></sup>
+						</td>
+					</tr>
+					<tr>
+						<td>Martinique (FR)</td>
+						<td>.mq</td>
+						<td>mx1-mq.mediaserv.net</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>
+						</td>
+					</tr>
+					<tr>
+						<td>Niger</td>
+						<td>.ne</td>
+						<td>
+							bow.intnet.ne<br>
+							bow.rain.fr
+						</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>—<br>
+							Jun. 2010<sup><a title="ServerFault" href="https://serverfault.com/q/154991">[sf2]</a></sup>
+						</td>
 					</tr>
 					<tr>
 						<td>Panama</td>
 						<td>.pa</td>
 						<td>ns.pa</td>
-						<td>2013—<br>Jan. 2024</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>—<br>
+							Jan. 2024
+						</td>
 					</tr>
 					<tr>
 						<td>Philippines</td>
@@ -644,18 +945,51 @@
 						<td>Aug. 2021—<br>Jan. 2024</td>
 					</tr>
 					<tr>
+						<td>Chad</td>
+						<td>.td</td>
+						<td>mail.intnet.td</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>—<br>
+							Jun. 2010<sup><a title="ServerFault" href="https://serverfault.com/q/154991">[sf2]</a></sup>
+						</td>
+					</tr>
+					<tr>
+						<td>Trinidad and Tobago</td>
+						<td>.tt</td>
+						<td>
+							66-27-54-138.san.rr.com<br>
+							66-27-54-142.san.rr.com
+						</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>—<br>
+							Jun. 2010<sup><a title="ServerFault" href="https://serverfault.com/q/154991">[sf2]</a></sup>
+						</td>
+					</tr>
+					<tr>
 						<td>Vatican</td>
 						<td>.va</td>
-						<td>raphaelmx1.posta.va<br>
+						<td>
+							lists.vatican.va<br>
+							paul.vatican.va<br>
+							proxy2.urbe.it<br>
+							john.vatican.va<br>
+							raphaelmx1.posta.va<br>
 							raphaelmx2.posta.va<br>
-							raphaelmx3.posta.va</td>
-						<td>2013</td>
+							raphaelmx3.posta.va
+						</td>
+						<td>
+							Dec. 2009<sup><a title="ServerFault" href="https://serverfault.com/a/90813">[sf1]</a></sup>—<br>
+							Dec. 2013
+						</td>
 					</tr>
 					<tr>
 						<td>Yemen</td>
 						<td>.ye</td>
 						<td>mail.yemen.net.ye</td>
-						<td>2013</td>
+						<td>
+							Jun. 2010<sup><a title="ServerFault" href="https://serverfault.com/q/154991">[sf2]</a></sup>—<br>
+							Dec. 2013
+						</td>
 					</tr>
 				</tbody>
 			</table>
@@ -732,7 +1066,8 @@
 		</dl>
 		<p>
 			Though this website is manually updated, there is automation in place to
-			ensure I'm warned of dotless domain changes. If you'd like, you can check
+			ensure I'm warned of dotless domain changes, which runs once every 2
+			weeks. If you'd like, you can check
 			<a href="https://github.com/MatheusAvellar/dotless">the repository</a>
 			where that happens!
 		</p>
@@ -754,52 +1089,40 @@
 			<li id="ref1">
 				<p>
 					<a href="https://www.icann.org/resources/pages/sac053-dotless-domains-2012-08-24-en">SSAC
-					Report on Dotless Domains</a> (2012). <i>Internet Corporation for
-					Assigned Names and Numbers</i>.<br>
-					<b>Relevant quote:</b> <q>As a result, the
-					SSAC recommended that the use of DNS resource records such as A, AAAA,
-					and MX in the apex of a Top-Level Domain (TLD) should be contractually
-					prohibited where appropriate, and strongly discouraged in all
-					cases.</q>
+					Report on Dotless Domains</a> (Feb. 2012). <i>Internet Corporation for Assigned Names and Numbers</i>.<br>
+					<b>Relevant quote:</b> <q>As a result, the SSAC recommended that the use of DNS resource records such as A, AAAA, and MX in the apex of a Top-Level Domain (TLD) should be contractually prohibited where appropriate, and strongly discouraged in all cases.</q>
 				</p>
 			</li>
 			<li id="ref2">
 				<p>
 					<a href="https://www.iab.org/documents/correspondence-reports-documents/2013-2/iab-statement-dotless-domains-considered-harmful/">IAB
-					Statement: Dotless Domains Considered Harmful</a> (2013). <i>Internet
+					Statement: Dotless Domains Considered Harmful</a> (Jul. 2013). <i>Internet
 					Architecture Board</i>.<br>
-					<b>Relevant quote:</b> <q>1. The IAB strongly
-					recommends against considering, implementing, or deploying dotless
-					domains; 2. The IAB believes that dotless domains are inherently
+					<b>Relevant quote:</b> <q>1. The IAB strongly recommends against considering, implementing, or deploying dotless domains; 2. The IAB believes that dotless domains are inherently
 					harmful to Internet security.</q>
 				</p>
 			</li>
 			<li id="ref3">
 				<p>
 					<a href="https://www.icann.org/resources/board-material/resolutions-new-gtld-2013-08-13-en">Approved
-					Resolutions | Meeting of the New gTLD Program Committee</a> (2013).
-					<i>New gTLD Program Committee</i>.<br>
-					<b>Relevant quote:</b> <q>[…]the NGPC
-					affirms that the use of dotless domains is prohibited.</q>
+					Resolutions | Meeting of the New gTLD Program Committee</a> (Aug. 2013). <i>New gTLD Program Committee</i>.<br>
+					<b>Relevant quote:</b> <q>[…]the NGPC affirms that the use of dotless domains is prohibited.</q>
 				</p>
 			</li>
 			<li id="ref4">
 				<p>
-					Atallah, Akram (2014). <a href="https://newgtlds.icann.org/sites/default/files/agreements/name-collision-assessment-04aug14-en.htm">Name
-					Collision Occurrence Assessment</a>. <i>Internet Corporation for Assigned
-					Names and Numbers</i>.
+					Atallah, Akram (Aug. 2014). <a href="https://newgtlds.icann.org/sites/default/files/agreements/name-collision-assessment-04aug14-en.htm">Name Collision Occurrence Assessment</a>. <i>Internet Corporation for Assigned Names and Numbers</i>.
 				</p>
 			</li>
 			<li id="ref5">
 				<p>
-					Levine, John; Hoffman, Paul (2013). <a href="https://datatracker.ietf.org/doc/html/rfc7085">Top-Level
-					Domains That Are Already Dotless</a>. <i>Internet Engineering Task Force</i>.
+					Levine, John; Hoffman, Paul (Dec. 2013). <a href="https://datatracker.ietf.org/doc/html/rfc7085">Top-Level Domains That Are Already Dotless</a>. <i>Internet Engineering Task Force</i>.
 				</p>
 			</li>
 		</ol>
 		<p class="timestamp">
 			Made with ♥&#xFE0E;<!--&#xFE0E;[Ref] stackoverflow.com/a/38452396/4824627-->
-			by Matheus Avellar<br>Last updated on December 2025
+			by Matheus Avellar<br>Last updated: December 2025
 		</p>
 	</footer>
 	<!-- ######### -->
@@ -811,7 +1134,7 @@
 	<!-- Rasmus' Inter font -->
 	<link rel="stylesheet" href="https://cdn.avl.la/font/inter.css">
 	<!-- LiteLightbox -->
-	<link href="./litelightbox.min.css" rel="stylesheet" type="text/css">
-	<script src="./litelightbox.min.js"></script>
+	<link href="https://cdn.avl.la/scripts/llb/litelightbox.min.css" rel="stylesheet" type="text/css">
+	<script src="https://cdn.avl.la/scripts/llb/litelightbox.min.js"></script>
 </body>
 </html>

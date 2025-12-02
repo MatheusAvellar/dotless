@@ -31,6 +31,11 @@ header > p, main > p, footer > p, footer > dl {
 header > p, main > p, footer > p {
 	text-indent: 1rem;
 }
+main > blockquote {
+	margin: .75em 100px .75em 116px;
+	border-left: 4px solid #eee;
+	padding-left: 32px;
+}
 ul, ol {
 	padding-inline-start: 40px;
 	margin: 1em 60px;
@@ -42,6 +47,11 @@ ul, ol {
 	header > p, main > p, footer > p, footer > dl {
 		margin: .75em 0;
 		line-height: 1.35;
+	}
+	main > blockquote {
+		margin: .75em 0 .75em 16px;
+		border-left: 4px solid #eee;
+		padding-left: 16px;
 	}
 	ul, ol {
 		padding-inline-start: 40px;
