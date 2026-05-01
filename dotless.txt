@@ -1,6 +1,7 @@
 A records ---------------------
 bd has address 203.112.194.232
 cm has address 195.24.205.60
+merck has address 127.0.53.53
 tk has address 217.119.57.22
 uz has address 91.212.89.8
 ws has address 64.70.19.33
@@ -18,6 +19,7 @@ gt mail is handled by 30 aspmx4.googlemail.com.
 gt mail is handled by 30 aspmx5.googlemail.com.
 hr mail is handled by 5 alpha.carnet.hr.
 km mail is handled by 100 mail1.comorestelecom.km.
+merck mail is handled by 10 your-dns-needs-immediate-attention.merck.
 mq mail is handled by 10 mx1-mq.mediaserv.net.
 mr mail is handled by 5 mail.nic.mr.
 tt mail is handled by 1 aspmx.l.google.com.
