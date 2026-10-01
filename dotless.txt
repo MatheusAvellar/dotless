@@ -18,7 +18,7 @@ gt mail is handled by 20 alt2.aspmx.l.google.com.
 gt mail is handled by 30 aspmx2.googlemail.com.
 gt mail is handled by 30 aspmx4.googlemail.com.
 gt mail is handled by 30 aspmx5.googlemail.com.
-hr mail is handled by 5 alpha.carnet.hr.
+hr mail is handled by 5 mx.carnet.hr.
 km mail is handled by 100 mail1.comorestelecom.km.
 merck mail is handled by 10 your-dns-needs-immediate-attention.merck.
 mq mail is handled by 10 mx1-mq.mediaserv.net.
