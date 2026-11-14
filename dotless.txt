@@ -22,11 +22,6 @@ km mail is handled by 100 mail1.comorestelecom.km.
 merck mail is handled by 10 your-dns-needs-immediate-attention.merck.
 mq mail is handled by 10 mx1-mq.mediaserv.net.
 mr mail is handled by 5 mail.nic.mr.
-sv mail is handled by 1 aspmx.l.google.com.
-sv mail is handled by 10 alt3.aspmx.l.google.com.
-sv mail is handled by 10 alt4.aspmx.l.google.com.
-sv mail is handled by 5 alt1.aspmx.l.google.com.
-sv mail is handled by 5 alt2.aspmx.l.google.com.
 tt mail is handled by 1 aspmx.l.google.com.
 tt mail is handled by 10 alt1.aspmx.l.google.com.
 ua mail is handled by 10 mr.kolo.net.
